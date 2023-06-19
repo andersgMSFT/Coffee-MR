@@ -1,0 +1,11 @@
+<environmentvariabledefinition schemaname="cr301_TeamsRecipient">
+  <defaultvalue>admin@M365B506604.onmicrosoft.com</defaultvalue>
+  <displayname default="TeamsRecipient">
+    <label description="TeamsRecipient" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.0</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>
