@@ -1,8 +1,8 @@
 {
-  "id": "d3f81352-6244-48a4-96a0-a81c5abbb581",
-  "name": "2023DirectionsPowerPlatformDemo",
+  "id": "d3f81352-6244-48a4-96a0-a89c5abbb581",
+  "name": "Coffee MR",
   "publisher": "BusinessCentral",
-  "version": "1.1.0.0",
+  "version": "1.0.0.0",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -17,8 +17,8 @@
   "runtime": "10.1",
   "idRanges": [
     {
-      "from": 52000,
-      "to": 53000
+      "from": 71070,
+      "to": 71080
     }
   ],
   "resourceExposurePolicy": {

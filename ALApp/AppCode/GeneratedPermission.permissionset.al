@@ -1,9 +1,10 @@
-permissionset 52000 GeneratedPermission
+permissionset 71070 GeneratedPermission
 {
     Assignable = true;
-    Permissions = codeunit PowerAppsDemoDataGenerator=X,
-        codeunit PowerAppsItemImages=X,
-        page DirectionsItems=X,
-        page PowerAppsSamplePage=X,
-        page PowerItemListPart=X;
+    Permissions = codeunit CoffeDemoDataGenerator = X,
+        codeunit CoffeeExtrasImages = X,
+        codeunit CoffeeMachineImages = X,
+        page "Coffee MR Sample" = X,
+        page CoffeeItemsListPart = X,
+        page CoffeeItems = X;
 }
