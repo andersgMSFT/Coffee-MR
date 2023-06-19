@@ -1,6 +1,6 @@
 {
   "id": "d3f81352-6244-48a4-96a0-a89c5abbb581",
-  "name": "Coffee MR",
+  "name": "Coffee MR sample",
   "publisher": "BusinessCentral",
   "version": "1.0.0.0",
   "brief": "",
@@ -9,7 +9,7 @@
   "EULA": "",
   "help": "",
   "url": "",
-  "logo": "",
+  "logo": "./coffeeLogo.jpg",
   "dependencies": [],
   "screenshots": [],
   "platform": "1.0.0.0",

@@ -10,7 +10,7 @@
             "startupObjectId": 71070,
             "startupObjectType": "Page",
             "breakOnError": "All",
-            "launchBrowser": true,
+            "launchBrowser": false,
             "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true
         }
