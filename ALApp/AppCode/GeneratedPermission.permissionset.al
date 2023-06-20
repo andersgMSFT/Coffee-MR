@@ -1,4 +1,4 @@
-permissionset 71070 GeneratedPermissionCoffeeMR
+permissionset 71070 PermissionsCoffeeMR
 {
     Assignable = true;
     Permissions = codeunit CoffeDemoDataGenerator = X,
