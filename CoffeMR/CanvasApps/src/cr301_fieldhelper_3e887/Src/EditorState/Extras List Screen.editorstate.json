@@ -2333,7 +2333,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnReviewSelectedItems",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2784,7 +2784,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "comYesNoDialogDeleteDraft",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3084,7 +3084,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conMid",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
