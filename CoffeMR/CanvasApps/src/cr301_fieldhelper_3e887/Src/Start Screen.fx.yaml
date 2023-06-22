@@ -56,7 +56,7 @@
                 Font: =varTheme.font
                 Height: =100
                 Size: =32
-                Text: ="Coffee is our passion"
+                Text: ="We bring you coffee"
                 Width: =Parent.Width
                 Y: =40
                 ZIndex: =2
