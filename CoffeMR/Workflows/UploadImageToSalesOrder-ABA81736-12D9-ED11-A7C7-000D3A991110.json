@@ -80,7 +80,7 @@
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_dynamicssmbsaas"
             },
             "parameters": {
-              "bcenvironment": "Sandbox",
+              "bcenvironment": "PowerApps",
               "company": "dc50d5e8-f9c9-ed11-94cc-000d3a220b2f",
               "dataset": "v2.0",
               "table": "documentAttachments",
@@ -136,7 +136,7 @@
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_dynamicssmbsaas"
             },
             "parameters": {
-              "bcenvironment": "SANDBOX",
+              "bcenvironment": "PowerApps",
               "company": "dc50d5e8-f9c9-ed11-94cc-000d3a220b2f",
               "dataset": "v2.0",
               "blobnavigationpath": "salesOrders/documentAttachments/attachmentContent",

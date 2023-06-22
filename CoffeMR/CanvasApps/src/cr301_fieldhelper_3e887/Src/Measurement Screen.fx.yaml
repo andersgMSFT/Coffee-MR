@@ -139,8 +139,8 @@
         ZIndex: =2
 
         recDialogBackground As rectangle:
-            BorderColor: =varTheme.brandColor
-            BorderThickness: =2
+            BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
             Height: =344
             Width: =496
