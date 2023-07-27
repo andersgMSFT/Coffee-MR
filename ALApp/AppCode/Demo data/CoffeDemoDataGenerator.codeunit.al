@@ -1,4 +1,4 @@
-codeunit 71072 CoffeDemoDataGenerator
+codeunit 70032 CoffeDemoDataGenerator
 {
     procedure GenerateDemoData()
     var

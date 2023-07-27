@@ -1,4 +1,4 @@
-page 71071 CoffeeItemsListPart
+page 70031 CoffeeItemsListPart
 {
     PageType = ListPart;
     SourceTable = Item;

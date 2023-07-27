@@ -1,4 +1,4 @@
-codeunit 71070 CoffeeExtrasImages
+codeunit 70030 CoffeeExtrasImages
 {
     procedure E0001_beans(): Text
     begin

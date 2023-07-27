@@ -1,4 +1,4 @@
-codeunit 71071 CoffeeMachineImages
+codeunit 70031 CoffeeMachineImages
 {
     procedure C0001_2018SandiagoSlim(): Text
     begin

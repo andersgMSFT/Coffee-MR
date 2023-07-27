@@ -1,4 +1,4 @@
-page 71070 "Coffee MR Sample"
+page 70030 "Coffee MR Sample"
 {
     PageType = Card;
     ApplicationArea = All;
