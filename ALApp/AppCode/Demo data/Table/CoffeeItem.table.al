@@ -12,5 +12,10 @@ tableextension 70030 CoffeeItem extends Item
             Caption = 'long Description';
             DataClassification = CustomerContent;
         }
+        field(70032; Model3D; Blob)
+        {
+            Caption = '3D model';
+            DataClassification = CustomerContent;
+        }
     }
 }
