@@ -82,11 +82,5 @@
       <RootComponent type="29" id="{aba81736-12d9-ed11-a7c7-000d3a991110}" behavior="0" />
       <RootComponent type="300" schemaName="cr301_fieldhelper_3e887" behavior="0" />
     </RootComponents>
-    <MissingDependencies>
-      <MissingDependency>
-        <Required type="EnvironmentVariableDefinition" displayName="cr301_TeamsRecipient" solution="Active" id.schemaname="cr301_TeamsRecipient" />
-        <Dependent type="29" displayName="Schedule support visit" id="{509c4675-d3d2-ed11-a7c7-000d3a991110}" />
-      </MissingDependency>
-    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>
