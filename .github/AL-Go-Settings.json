@@ -7,9 +7,9 @@
     "Demo (Production)"
   ],
   "DeployToDev": {
-    "environmentName": "Sandbox23",
-    "companyId": "89d56cc8-2c55-ee11-8df6-6045bde9b8f1",
-    "ppEnvironmentUrl": "https://org64131425.crm.dynamics.com/"
+    "environmentName": "Sandbox",
+    "companyId": "772439c5-0c5c-ee11-8df4-6045bde98c3d",
+    "ppEnvironmentUrl": "https://org12e71492.crm.dynamics.com/"
   },
   "DeployToDemo": {
     "environmentName": "Sandbox",
