@@ -2,7 +2,7 @@
   "id": "d3f81352-6244-48a4-96a0-a89c5abbb581",
   "name": "Coffee MR sample",
   "publisher": "BusinessCentral",
-  "version": "1.0.0.0",
+  "version": "1.0.9.0",
   "brief": "",
   "description": "",
   "privacyStatement": "",
@@ -17,8 +17,8 @@
   "runtime": "10.1",
   "idRanges": [
     {
-      "from": 71070,
-      "to": 71080
+      "from": 70030,
+      "to": 70040
     }
   ],
   "resourceExposurePolicy": {

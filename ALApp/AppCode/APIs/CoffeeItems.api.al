@@ -1,4 +1,4 @@
-page 71072 CoffeeItems
+page 70032 CoffeeItems
 {
     PageType = API;
     Caption = 'Coffee Items';
@@ -60,13 +60,17 @@ page 71072 CoffeeItems
                 {
                     Caption = 'Long description';
                 }
-                field(isAvailableForFieldWorkers; rec.IsAvialableForFieldWorker)
+                field(isAvailableForFieldWorkers; Rec.IsAvialableForFieldWorker)
                 {
                     Caption = 'Is available for field workers';
                 }
                 field(picture; NameValueBufferBlob."Value BLOB")
                 {
                     Caption = 'Picture';
+                }
+                field(model3D; Rec.Model3D)
+                {
+                    Caption = '3D Model';
                 }
             }
         }
