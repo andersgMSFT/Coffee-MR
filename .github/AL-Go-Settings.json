@@ -4,8 +4,14 @@
   "powerPlatformSolutionFolder": "CoffeMR",
   "environments": [
     "Dev (Production)",
-    "Demo (Production)"
+    "Demo (Production)",
+    "New"
   ],
+  "DeployToNew": {
+    "environmentName": "production",
+    "companyId": "772439c5-0c5c-ee11-8df4-6045bde98c3d",
+    "ppEnvironmentUrl": "https://org49a8cfb1.crm.dynamics.com/"
+  },
   "DeployToDev": {
     "environmentName": "Sandbox23",
     "companyId": "89d56cc8-2c55-ee11-8df6-6045bde9b8f1",
