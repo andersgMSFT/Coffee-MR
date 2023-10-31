@@ -4,6 +4,12 @@ pageextension 70033 CoffeeItem extends "Item Card"
     {
         addlast(Item)
         {
+            field(IsAvialableForFieldWorker; Rec.IsAvialableForFieldWorker)
+            {
+                ApplicationArea = All;
+                Editable = true;
+            }
+
             field(uploadModel3d; uploadModelLabel)
             {
                 ApplicationArea = All;
@@ -15,7 +21,6 @@ pageextension 70033 CoffeeItem extends "Item Card"
                     model3DOutStream: OutStream;
                     fromFile: Text;
                 begin
-                    // Move text into constants 
                     if UploadIntoStream('Upload 3D model', '', '', fromFile, model3DStream)
                     then begin
                         Clear(Rec.Model3D);
