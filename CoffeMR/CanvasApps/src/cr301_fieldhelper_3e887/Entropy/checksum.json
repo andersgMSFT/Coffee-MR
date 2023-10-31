@@ -1,6 +1,6 @@
 {
   "ClientBuildDetails": {
-    "CommitHash": "e0e09e644b41d4a7edb605f8c4d0af14b4e2241e",
+    "CommitHash": "ad5b01d06455feee13561b05c10c3974fc796f4c",
     "IsLocalBuild": false
   },
   "ClientPerFileChecksums": {
@@ -25,8 +25,8 @@
     "Controls\\52.json": "C8_ycFjoyfqhBUniedEfU1rDGqJElwxZoBi3tVHtShnkCA=",
     "Controls\\88.json": "C8_sI6OXW6TGtZEcl8reQAs1He0en47vZ6vGuRX4s9ANnw=",
     "Header.json": "C8_06gMYlLOnLxVuMHlQRmcHc7hryTb5vyw1t4poCZ7KC8=",
-    "Properties.json": "C8_Gc8EZIExYl07RQjfoIfmZyoj69G2v0l67ju4PtiWEY0=",
-    "References\\DataSources.json": "C8_SdDGBp/xVjaH8DnnGcdhFZ2NkgYUhmBVCbfPFkCh9fA=",
+    "Properties.json": "C8_/cXG2OkbddrzAHvoVNxeX9LqhnI4vdnl10QgFTBXibQ=",
+    "References\\DataSources.json": "C8_5ePAznAMpJLLxCzqAtHNBvkL+ma7aJkaDS09k9BDNfQ=",
     "References\\QualifiedValues.json": "C8_tA58/e4ClS8kYY3t9JyYfjbeCYa/tyPseqv7Dua9sY0=",
     "References\\Resources.json": "C8_92sDx5TEjfRE3fkKSgiB0Wfl3ssPsslaANU8igZ7vGc=",
     "References\\Templates.json": "C8_TCLcvOzX4QufH+AUul2BLNj1D/05NVMYF6MXCStL0YY=",
@@ -34,7 +34,7 @@
     "Resources\\ezlshsrl.jpg": "C8_ADMIjtIlEV8gw/foElYeJEN5FvX3AIc0w3zzkZ4ec5w=",
     "Resources\\PublishInfo.json": "C8_vQObHvEj7w2ZH3lI0WaJVzy42pZebptqolULBRRrNoM="
   },
-  "ClientStampedChecksum": "C8_oshCE9ulJ265P3fMlGh7LGBf/aj+ECbYhE9x2cxadXM=",
+  "ClientStampedChecksum": "C8_SS7EyN0LwGuUDDC4xW87M8ua9BlOohzsIujZGsciNd0=",
   "ServerPerFileChecksums": {
     "AppCheckerResult.sarif": "C8_DgB7bXPfyuMk9Ka/83v1jRJBtYRfefTKCJYxFDHVLYw=",
     "Assets\\Images\\a8380748-623c-40a8-ab3e-c250bfa57f03.gif": "C8_bpq4khY6bVfs/YOFlTbCsQOAgP9e8nOZP9jICBJ7zCM=",

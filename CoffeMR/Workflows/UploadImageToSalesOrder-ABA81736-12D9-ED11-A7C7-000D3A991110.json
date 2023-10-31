@@ -80,8 +80,8 @@
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_dynamicssmbsaas"
             },
             "parameters": {
-              "bcenvironment": "PowerApps",
-              "company": "dc50d5e8-f9c9-ed11-94cc-000d3a220b2f",
+              "bcenvironment": "DirectionsEmea",
+              "company": "4cd1f8a0-5a71-ee11-8182-6045bde9ba07",
               "dataset": "v2.0",
               "table": "documentAttachments",
               "item/fileName": "Rendered3D.png",
@@ -136,8 +136,8 @@
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_dynamicssmbsaas"
             },
             "parameters": {
-              "bcenvironment": "PowerApps",
-              "company": "dc50d5e8-f9c9-ed11-94cc-000d3a220b2f",
+              "bcenvironment": "DirectionsEmea",
+              "company": "4cd1f8a0-5a71-ee11-8182-6045bde9ba07",
               "dataset": "v2.0",
               "blobnavigationpath": "salesOrders/documentAttachments/attachmentContent",
               "pathParameters/salesOrders": "@outputs('Create_record_(V3)')?['body/parentId']",

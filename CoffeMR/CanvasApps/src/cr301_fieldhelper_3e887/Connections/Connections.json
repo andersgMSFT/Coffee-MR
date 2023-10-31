@@ -9,7 +9,7 @@
       "parameterHintsV2": {}
     },
     "datasets": {
-      "PowerApps,dc50d5e8-f9c9-ed11-94cc-000d3a220b2f": {
+      "DirectionsEmea,4cd1f8a0-5a71-ee11-8182-6045bde9ba07": {
         "dataSources": {
           "coffeeItems (microsoft/powerApps/beta)": {
             "tableName": "coffeeItems,microsoft%252FpowerApps%252Fbeta"
