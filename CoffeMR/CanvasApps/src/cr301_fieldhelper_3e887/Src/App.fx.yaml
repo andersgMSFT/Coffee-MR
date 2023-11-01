@@ -11,6 +11,7 @@ App As appinfo:
         Set(varCurrencyFormat, "$#,##0.00");
         Set(varBcLocale, "en-us");
     StartScreen: ='Start Screen'
+    Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false

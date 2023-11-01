@@ -90,7 +90,7 @@
                     =// Clear quantity control if it is showing
                     UpdateContext({ctxShowItemQuantityControl: Blank()});
                     // Check if item is in list
-                    UpdateContext({ ctxIsItemInList: IsBlank(LookUp(colSelectedItems, id = ctxSelectedItem.id))});
+                    UpdateContext({ ctxIsItemInList: IsBlank(LookUp(colSelectedItems, id = ctxSelectedItem.'System ID'))});
                     
                     If(
                         ctxIsItemInList,
@@ -98,16 +98,16 @@
                         Collect(
                             colSelectedItems,
                             {
-                                id: ctxSelectedItem.id,
-                                name: ctxSelectedItem.displayName,
-                                price: ctxSelectedItem.unitPrice,
+                                id: ctxSelectedItem.'System ID',
+                                name: ctxSelectedItem.DisplayName,
+                                price: ctxSelectedItem.'Unit price',
                                 group: ctxSelectedItem.'Item Category Name',
                                 quantity: 1,
                                 // Use placeholder image if the image is not provided
                                 image: If(
-                                    ctxSelectedItem.itemImageText = GUID("00000000-0000-0000-0000-000000000000"),
+                                    ctxSelectedItem.'Picture reference' = GUID("00000000-0000-0000-0000-000000000000"),
                                     placeholder,
-                                    ctxSelectedItem.picture
+                                    ctxSelectedItem.Picture
                                 )
                             }
                         );
@@ -115,7 +115,7 @@
                         // Update item quantity
                         Patch(
                             colSelectedItems,
-                            {id: ctxSelectedItem.id},
+                            {id: ctxSelectedItem.'System ID'},
                             {quantity: Value(btnQCQuantityItemDetails.Text) + 1}
                         )
                     );
@@ -236,7 +236,7 @@
                     OnSelect: |-
                         =Patch(
                             colSelectedItems,
-                            {id: ctxSelectedItem.id},
+                            {id: ctxSelectedItem.'System ID'},
                             {quantity: Value(btnQCQuantityItemDetails.Text) + 1}
                         )
                     TabIndex: =0
@@ -305,7 +305,7 @@
                             Value(btnQCQuantityItemDetails.Text) > 0,
                             Patch(
                                 colSelectedItems,
-                                {id: ctxSelectedItem.id},
+                                {id: ctxSelectedItem.'System ID'},
                                 {quantity: Value(btnQCQuantityItemDetails.Text) - 1}
                             )
                         )

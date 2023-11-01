@@ -106,7 +106,7 @@
             galCoffeeMachine As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Height: =Parent.Height
-                Items: =Filter('coffeeItems (microsoft/powerApps/beta)', itemCategoryCode = "finishedGoods")
+                Items: =Filter('coffeeItems (microsoft/powerApps/beta)', 'Item Category Code' = "finishedGoods")
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-

@@ -483,17 +483,17 @@
         OnSelect: |
             =UpdateContext({ctxShowLoadingScreen: true, ctxError: false});
             // Hard coded to use 'School of Fine Art'
-            Set(varSelectedCustomer, LookUp('customers (v2.0)', number = "30000"));
+            Set(varSelectedCustomer, LookUp('customers (v2.0)', 'No.' = "30000"));
             
             Set(varCreatedSalesOrder, Patch(
                                             'salesOrders (v2.0)', 
                                             Defaults('salesOrders (v2.0)'), 
-                                            {customerId: varSelectedCustomer.Id}
+                                            {'Customer Id': varSelectedCustomer.Id}
                                         )
             );
             
             ForAll(colSelectedItems As item,
-                Patch('salesOrderLines (v2.0)', Defaults('salesOrderLines (v2.0)'), {documentId: varCreatedSalesOrder.id, itemId: item.id, quantity: item.quantity});
+                Patch('salesOrderLines (v2.0)', Defaults('salesOrderLines (v2.0)'), {'Document Id': varCreatedSalesOrder.Id, 'Item Id': item.id, Quantity: item.quantity});
             );
             
             // Call flow to upload images

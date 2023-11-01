@@ -213,22 +213,22 @@
                     
                     If(
                         // Check if item is in list
-                        IsBlank(LookUp(colSelectedItems, id = ThisItem.id))
+                        IsBlank(LookUp(colSelectedItems, id = ThisItem.'System ID'))
                         ,
                         // Add item to list
                         Collect(
                             colSelectedItems,
                             {
-                                id: ThisItem.id,
-                                name: ThisItem.displayName,
-                                price: ThisItem.unitPrice,
-                                group: ThisItem.itemCategoryName,
+                                id: ThisItem.'System ID',
+                                name: ThisItem.DisplayName,
+                                price: ThisItem.'Unit price',
+                                group: ThisItem.'Item Category Name',
                                 quantity: 1,
                                 // Use placeholder image if the image is not provided
                                 image: If(
-                                    ThisItem.itemImageText = GUID("00000000-0000-0000-0000-000000000000"),
+                                    ThisItem.'Picture reference' = GUID("00000000-0000-0000-0000-000000000000"),
                                     placeholder,
-                                    ThisItem.picture
+                                    ThisItem.Picture
                                 )
                             }
                         );
@@ -236,7 +236,7 @@
                         // Update item quantity
                         Patch(
                             colSelectedItems,
-                            {id: ThisItem.id},
+                            {id: ThisItem.'System ID'},
                             // Consider getting the value via look up in the list
                             {quantity: Value(btnQCQuantity.Text) + 1}
                         )
@@ -259,7 +259,7 @@
                 Height: =60
                 HoverFill: =varTheme.primaryColor
                 OnSelect: |-
-                    =UpdateContext({ctxItemShowingQuantityControl: ThisItem.id});
+                    =UpdateContext({ctxItemShowingQuantityControl: ThisItem.'System ID'});
                 RadiusBottomLeft: =35
                 RadiusBottomRight: =35
                 RadiusTopLeft: =35
@@ -345,7 +345,7 @@
                     OnSelect: |-
                         =Patch(
                             colSelectedItems,
-                            {id: ThisItem.id},
+                            {id: ThisItem.'System ID'},
                             {quantity: Value(btnQCQuantity.Text) + 1}
                         )
                     PaddingBottom: =15
@@ -420,7 +420,7 @@
                             Value(btnQCQuantity.Text) > 0,
                             Patch(
                                 colSelectedItems,
-                                {id: ThisItem.id},
+                                {id: ThisItem.'System ID'},
                                 {quantity: Value(btnQCQuantity.Text) - 1}
                             )
                         )
