@@ -60,13 +60,17 @@ page 70032 CoffeeItems
                 {
                     Caption = 'Long description';
                 }
-                field(isAvailableForFieldWorkers; rec.IsAvialableForFieldWorker)
+                field(isAvailableForFieldWorkers; Rec.IsAvialableForFieldWorker)
                 {
                     Caption = 'Is available for field workers';
                 }
                 field(picture; NameValueBufferBlob."Value BLOB")
                 {
                     Caption = 'Picture';
+                }
+                field(model3D; Rec.Model3D)
+                {
+                    Caption = '3D Model';
                 }
             }
         }

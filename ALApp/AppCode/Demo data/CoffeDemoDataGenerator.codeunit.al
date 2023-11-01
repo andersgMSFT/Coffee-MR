@@ -1,5 +1,12 @@
 codeunit 70032 CoffeDemoDataGenerator
 {
+    var
+        DeleteDemodataConfirmationQst: Label 'Are you sure you want to delete all sample data generated for the Take Order app?';
+        DemodataDeletedMsg: Label 'Sample data deleted successfully.';
+        DemodataCreatedMsg: Label 'Sample data created successfully.';
+        InvalidItemTemplateErr: Label 'We tried to create some sample items, but we could not apply the template "%1". Make sure you are running in an evaluation company with a valid item template.';
+        InvalidCustTemplateErr: Label 'We tried to create some sample customers, but we could not apply the template "%1". Make sure you are running in an evaluation company with a valid customer template.';
+
     procedure GenerateDemoData()
     var
         itemRecord: Record Item;
@@ -41,44 +48,35 @@ codeunit 70032 CoffeDemoDataGenerator
 
     procedure AddItem(ItemNumber: Text; ItemName: Text; description: Text; itemCategory: Text; unitPrice: Decimal; itemPicture: Text)
     var
-        itemRecord: Record Item;
-        inventoryGroup: Record "Inventory Posting Group";
-        itemUnitOfMeasure: Record "Item Unit of Measure";
-        genProdPostingGroup: Record "Gen. Product Posting Group";
-        taxGroupCode: Record "Tax Group";
+        ItemTempl: Record "Item Templ.";
+        ItemRecord: Record Item;
+        ItemTemplMgt: Codeunit "Item Templ. Mgt.";
+        ItemCreated: Boolean;
+        IsHandled: Boolean;
     begin
-        InventoryGroup.FindFirst();
-        TaxGroupCode.FindFirst();
-        GenProdPostingGroup.Get('RETAIL');
+        // Create item with manual primary key
+        ItemRecord.Init();
+        ItemRecord.Validate("No.", ItemNumber);
 
-        if itemRecord.Get(itemNumber) then begin
-            ItemRecord.Validate(Description, ItemName);
-            ItemRecord.Validate("Unit Price", UnitPrice);
-            ItemRecord.Validate("Item Category Code", itemCategory);
-            ItemRecord.Validate("Inventory Posting Group", InventoryGroup.Code);
-            ItemRecord.Validate("Gen. Prod. Posting Group", GenProdPostingGroup.Code);
-            ItemRecord.Validate("Tax Group Code", TaxGroupCode.Code);
-            ItemRecord.Validate(IsAvialableForFieldWorker, true);
-            AddImageToItem(ItemPicture, ItemRecord);
-            itemRecord.Modify(true);
+        // Apply item template for physical items
+        ItemTempl.SetFilter("Inventory Posting Group", '<>%1', '');
+        ItemTempl.FindFirst();
+        ItemCreated := ItemTemplMgt.CreateItemFromTemplate(ItemRecord, IsHandled, ItemTempl.Code);
+        if not ItemCreated or not IsHandled then
+            Error(InvalidItemTemplateErr, ItemTempl.Code);
 
-        end else begin
-            ItemRecord.Init();
-            ItemRecord.Validate("No.", ItemNumber);
-            ItemRecord.Validate(Description, ItemName);
-            ItemRecord.Validate("Unit Price", UnitPrice);
-            ItemRecord.Validate("Item Category Code", itemCategory);
-            ItemRecord.Validate("Inventory Posting Group", InventoryGroup.Code);
-            ItemRecord.Validate("Gen. Prod. Posting Group", GenProdPostingGroup.Code);
-            ItemRecord.Validate("Tax Group Code", TaxGroupCode.Code);
-            ItemRecord.Validate(IsAvialableForFieldWorker, true);
-            AddImageToItem(ItemPicture, ItemRecord);
+        // Update the item information
+        ItemRecord.Get(ItemNumber);
+        ItemRecord.Validate(Description, ItemName);
+        ItemRecord.Validate("Unit Price", UnitPrice);
+        ItemRecord.Validate("Item Category Code", itemCategory);
+        ItemRecord.Validate(IsAvialableForFieldWorker, true);
+        ItemRecord.Validate(LongDescription, description);
+        ItemRecord.Modify(true);
 
-            ItemRecord.Insert(true);
-            AddItemUnitOfMeasure(ItemNumber);
-        end;
+        AddImageToItem(ItemPicture, ItemRecord);
+        AddItemUnitOfMeasure(ItemNumber);
     end;
-
 
     procedure AddItemCatagories(description: Text; code: Text)
     var
@@ -113,7 +111,7 @@ codeunit 70032 CoffeDemoDataGenerator
         itemRecord.Modify(true);
     end;
 
-    procedure addImageToItem(Base64Img: Text; var itemRecord: Record Item)
+    procedure AddImageToItem(Base64Img: Text; var itemRecord: Record Item)
     var
         Base64Convert: Codeunit "Base64 Convert";
         TempBlob: Codeunit "Temp Blob";
@@ -123,6 +121,6 @@ codeunit 70032 CoffeDemoDataGenerator
         Outstr := TempBlob.CreateOutStream();
         Base64Convert.FromBase64(Base64Img, Outstr);
         itemRecord.Picture.ImportStream(TempBlob.CreateInStream(), 'Image demo data for Item');
+        ItemRecord.Modify(true);
     end;
-
 }
