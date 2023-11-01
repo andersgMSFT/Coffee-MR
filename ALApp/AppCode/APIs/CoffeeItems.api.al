@@ -72,6 +72,10 @@ page 70032 CoffeeItems
                 {
                     Caption = '3D Model';
                 }
+                field(has3DModel; Has3DModel)
+                {
+                    Caption = 'Has 3D Model';
+                }
             }
         }
     }
@@ -80,6 +84,7 @@ page 70032 CoffeeItems
         ItemCatagoryName: Text[100];
         NameValueBufferBlob: Record "Name/Value Buffer" temporary; // This can be any table with a field of type Blob
         ConfigMediaBuffer: Record "Config. Media Buffer" temporary; // This can be any table with a field of type Media
+        Has3DModel: Boolean;
 
     trigger OnAfterGetRecord()
     var
@@ -119,5 +124,12 @@ page 70032 CoffeeItems
             then
                 ItemCatagoryName := ItemCategory.Description
         end;
+
+        // Set property to indicate if the item has a 3D model
+        Rec.SetAutoCalcFields(Model3D);
+        Has3DModel := false;
+        if Rec.Model3D.HasValue then
+            Has3DModel := true;
+
     end;
 }
