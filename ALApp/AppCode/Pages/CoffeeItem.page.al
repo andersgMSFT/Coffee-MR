@@ -31,7 +31,6 @@ pageextension 70033 CoffeeItem extends "Item Card"
                     end
                     else
                         Message('Upload canceled');
-
                 end;
             }
         }
@@ -48,6 +47,4 @@ pageextension 70033 CoffeeItem extends "Item Card"
 
     var
         uploadModelLabel: Text;
-
-
 }
