@@ -121,5 +121,6 @@ codeunit 70032 CoffeDemoDataGenerator
         Outstr := TempBlob.CreateOutStream();
         Base64Convert.FromBase64(Base64Img, Outstr);
         itemRecord.Picture.ImportStream(TempBlob.CreateInStream(), 'Image demo data for Item');
+        ItemRecord.Modify(true);
     end;
 }
