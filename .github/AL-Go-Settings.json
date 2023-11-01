@@ -6,10 +6,10 @@
     "Monica",
     "New"
   ],
-  "DeployToNew": {
-    "environmentName": "production",
+  "DeployToDev": {
+    "environmentName": "Sandbox",
     "companyId": "772439c5-0c5c-ee11-8df4-6045bde98c3d",
-    "ppEnvironmentUrl": "https://org49a8cfb1.crm.dynamics.com/"
+    "ppEnvironmentUrl": "https://org12e71492.crm.dynamics.com/"
   },
   "DeployToMonica": {
     "environmentName": "DirectionsEmea",
