@@ -3,12 +3,13 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas",
     "CdpRevision": {
       "BaseUrl": "/v3",
-      "LastChangedTimeString": "2023-06-06T16:31:37.2900000Z",
+      "LastChangedTimeString": "2023-10-30T19:10:03.9940000Z",
       "RevisionNumber": 3
     },
     "ConnectedDataSourceInfoNameMapping": {
       "baseUnitOfMeasureCode": "Base Unit Of Measure Code",
       "displayName": "DisplayName",
+      "has3DModel": "Has 3D Model",
       "id": "System ID",
       "inventory": "Inventory",
       "isAvailableForFieldWorkers": "Is available for field workers",
@@ -16,11 +17,12 @@
       "itemCategoryName": "Item Category Name",
       "itemImageText": "Picture reference",
       "longDescription": "Long description",
+      "model3D": "3D Model",
       "number": "Number",
       "picture": "Picture",
       "unitPrice": "Unit price"
     },
-    "DatasetName": "POWERAPPS,dc50d5e8-f9c9-ed11-94cc-000d3a220b2f",
+    "DatasetName": "SandboxUK,7368d553-0c5c-ee11-8df4-6045bdc89477",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,

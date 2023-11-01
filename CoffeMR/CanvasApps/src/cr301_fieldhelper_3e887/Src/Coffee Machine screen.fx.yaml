@@ -72,6 +72,7 @@
     "ViewInMR1 As 'View in MR (preview)'.pcfdataset":
         BorderFillColor: =RGBA(47, 81, 151, 1)
         BorderThickness: =0
+        Disabled: =Not(varSelectedCoffeeMachine.'Has 3D Model')
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledContentColor: =RGBA(166, 166, 166, 1)
         DisabledFillColor: =RGBA(244, 244, 244, 1)
@@ -87,8 +88,7 @@
         PressedBorderColor: =RGBA(255, 255, 255, 1)
         PressedContentColor: =RGBA(56, 96, 178, 1)
         PressedFillColor: =RGBA(255, 255, 255, 1)
-        Source: |-
-            ="https://github.com/andersgMSFT/TestCDN/blob/cdbe9d5d80252d922cc98794b5dc49368b603226/Untitled.glb"
+        Source: =varSelectedCoffeeMachine.'3D Model'
         TextColor: =varTheme.brandColor
         Width: =393
         X: =123

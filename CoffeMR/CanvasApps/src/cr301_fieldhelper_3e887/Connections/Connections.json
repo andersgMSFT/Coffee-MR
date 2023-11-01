@@ -1,15 +1,19 @@
 {
   "0ff5df45-9575-4f2b-8cac-8ae027644295": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write"
+    ],
     "connectionRef": {
       "apiTier": "Premium",
       "displayName": "Dynamics 365 Business Central",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/dynamicssmbsaas/icon.png",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/dynamicssmbsaas/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas",
       "parameterHints": {},
       "parameterHintsV2": {}
     },
     "datasets": {
-      "PowerApps,dc50d5e8-f9c9-ed11-94cc-000d3a220b2f": {
+      "SandboxUK,7368d553-0c5c-ee11-8df4-6045bdc89477": {
         "dataSources": {
           "coffeeItems (microsoft/powerApps/beta)": {
             "tableName": "coffeeItems,microsoft%252FpowerApps%252Fbeta"
@@ -30,10 +34,13 @@
     "id": "0ff5df45-9575-4f2b-8cac-8ae027644295"
   },
   "ea874b1a-7601-47f4-8e74-74b9da7b451c": {
+    "appActions": [
+      "Run"
+    ],
     "connectionRef": {
       "apiTier": "Standard",
       "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
         "0ff5df45-9575-4f2b-8cac-8ae027644295": {
@@ -43,7 +50,7 @@
           "value": "aba81736-12d9-ed11-a7c7-000d3a991110"
         },
         "workflowName": {
-          "value": "2487c84f-2910-4a51-84ad-e3028037d4fa"
+          "value": "d21fa244-dda4-48ab-852e-5eaa5f682dee"
         }
       },
       "parameterHintsV2": {
@@ -54,7 +61,7 @@
           "value": "aba81736-12d9-ed11-a7c7-000d3a991110"
         },
         "workflowName": {
-          "value": "2487c84f-2910-4a51-84ad-e3028037d4fa"
+          "value": "d21fa244-dda4-48ab-852e-5eaa5f682dee"
         }
       }
     },
