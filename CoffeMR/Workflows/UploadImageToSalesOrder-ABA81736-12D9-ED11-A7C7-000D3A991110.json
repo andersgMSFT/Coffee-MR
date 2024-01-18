@@ -1,10 +1,19 @@
 {
   "properties": {
     "connectionReferences": {
-      "shared_dynamicssmbsaas_1": {
+      "shared_dynamicssmbsaas_2": {
         "runtimeSource": "invoker",
         "connection": {
-          "connectionReferenceLogicalName": "cr301_BcConnection"
+          "connectionReferenceLogicalName": "new_shareddynamicssmbsaas_f4e3d"
+        },
+        "api": {
+          "name": "shared_dynamicssmbsaas"
+        }
+      },
+      "shared_dynamicssmbsaas": {
+        "runtimeSource": "invoker",
+        "connection": {
+          "connectionReferenceLogicalName": "new_shareddynamicssmbsaas_9cc60"
         },
         "api": {
           "name": "shared_dynamicssmbsaas"
@@ -75,13 +84,13 @@
           "type": "OpenApiConnection",
           "inputs": {
             "host": {
-              "connectionName": "shared_dynamicssmbsaas_1",
+              "connectionName": "shared_dynamicssmbsaas_2",
               "operationId": "PostItemV3",
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_dynamicssmbsaas"
             },
             "parameters": {
-              "bcenvironment": "SandboxUK",
-              "company": "7368d553-0c5c-ee11-8df4-6045bdc89477",
+              "bcenvironment": "CoffeeMRTest",
+              "company": "36e47147-6fab-ee11-a56d-6045bdc8a8eb",
               "dataset": "v2.0",
               "table": "documentAttachments",
               "item/fileName": "Rendered3D.png",
@@ -131,13 +140,13 @@
           "type": "OpenApiConnection",
           "inputs": {
             "host": {
-              "connectionName": "shared_dynamicssmbsaas_1",
+              "connectionName": "shared_dynamicssmbsaas",
               "operationId": "PatchBlobFromNavigationV3",
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_dynamicssmbsaas"
             },
             "parameters": {
-              "bcenvironment": "SandboxUK",
-              "company": "7368d553-0c5c-ee11-8df4-6045bdc89477",
+              "bcenvironment": "CoffeeMRTest",
+              "company": "36e47147-6fab-ee11-a56d-6045bdc8a8eb",
               "dataset": "v2.0",
               "blobnavigationpath": "salesOrders/documentAttachments/attachmentContent",
               "pathParameters/salesOrders": "@outputs('Create_record_(V3)')?['body/parentId']",
