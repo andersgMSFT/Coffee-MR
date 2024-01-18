@@ -225,6 +225,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnPickFromList",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -514,6 +515,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conActions",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -735,6 +737,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "icnCloseActionScreen",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1105,6 +1108,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "mrStartMeasure",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1303,6 +1307,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Start Measure Screen",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [

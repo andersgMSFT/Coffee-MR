@@ -100,6 +100,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnLoadOrderSummary",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -448,6 +449,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnQCAddItemBackOS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -789,6 +791,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnQCBackgroundOS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1151,6 +1154,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnQCQuantityOS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1499,6 +1503,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnQCRemoveItemBackOS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1848,6 +1853,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnQuantityOrderSummary",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2215,7 +2221,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnSubmitOrder",
-      "ParentIndex": 2,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2453,6 +2460,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "comBigDivider_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2536,7 +2544,8 @@
       },
       "MetaDataIDKey": "",
       "Name": "comBigDividerBottomSummary",
-      "ParentIndex": 1,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2627,7 +2636,8 @@
       },
       "MetaDataIDKey": "",
       "Name": "comLoadingOverlaySummaryScreen",
-      "ParentIndex": 5,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2755,7 +2765,8 @@
       },
       "MetaDataIDKey": "",
       "Name": "comYesNoDialogCheckout",
-      "ParentIndex": 4,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2904,6 +2915,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conContent",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3103,6 +3115,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conHeader",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3280,6 +3293,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conItemInformation",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3442,7 +3456,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conOrderSummaryHeader",
-      "ParentIndex": 3,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3635,6 +3650,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conQuantityControlOrderSummary",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3799,6 +3815,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conTotal",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3998,6 +4015,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "figItemOverlayOrderSummary",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4162,6 +4180,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "figItemSeparatorOrderSummary",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4272,6 +4291,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate1_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4359,7 +4379,8 @@
           "InvariantPropertyName": "ShowScrollbar",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "MaxTemplateSize"
       ],
       "GalleryTemplateChildName": "galleryTemplate1_3",
       "HasDynamicProperties": false,
@@ -4372,7 +4393,8 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galOrderSummary",
-      "ParentIndex": 6,
+      "OptimizeForDevices": "Off",
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4504,6 +4526,11 @@
           "Category": "Design",
           "PropertyName": "LoadingSpinnerColor",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "MaxTemplateSize",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultGalleryStyle",
@@ -4622,6 +4649,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "icnBack",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4854,6 +4882,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "icnHeaderExpandedState",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5111,6 +5140,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "icnQCAddItemOS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5401,6 +5431,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "icnQCRemoveItemOS",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5690,6 +5721,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgItemImageOrderSummary",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5940,6 +5972,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblCurrentOrderNumber",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6237,6 +6270,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblCurrentOrderTable",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6543,6 +6577,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblGroupNameExtra",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6867,6 +6902,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblItemDisplayName_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7168,6 +7204,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblItemPrice_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7469,6 +7506,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblItemTotalSum",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7776,6 +7814,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblSumCost",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8100,6 +8139,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblTotalOrder",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8354,6 +8394,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "recCurrentOrderDivider",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8499,6 +8540,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "recOverLay",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -8622,6 +8664,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Summary Screen",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [

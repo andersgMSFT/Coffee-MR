@@ -1,7 +1,7 @@
 "'Coffee Machine screen' As screen":
     Fill: =varTheme.brandColor
 
-    Image6 As image:
+    imgSelectedCoffeeMachine As image:
         BorderColor: =RGBA(237, 237, 237, 1)
         BorderThickness: =1
         Height: =431
@@ -16,7 +16,7 @@
         Y: =185
         ZIndex: =1
 
-    Button3_1 As button:
+    btnSelectCoffeeMachine As button:
         BorderThickness: =0
         Color: =varTheme.brandColor
         Fill: =Color.White
@@ -40,7 +40,7 @@
         Width: =Parent.Width
         ZIndex: =3
 
-        Label4_7 As label:
+        lblCoffeeMachineName As label:
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             Font: =Font.'Segoe UI'
@@ -50,7 +50,7 @@
             Width: =Parent.Width
             ZIndex: =3
 
-        Icon4_2 As icon.ChevronLeft:
+        icnBackToCoffeeMachineList As icon.ChevronLeft:
             Color: =RGBA(255, 255, 255, 1)
             Height: =Parent.Height
             Icon: =Icon.ChevronLeft
@@ -69,7 +69,7 @@
         Y: =conCoffeeHeader.Height
         ZIndex: =4
 
-    "ViewInMR1 As 'View in MR (preview)'.pcfdataset":
+    "ViewInMRControl As 'View in MR (preview)'.pcfdataset":
         BorderFillColor: =RGBA(47, 81, 151, 1)
         BorderThickness: =0
         Disabled: =Not(varSelectedCoffeeMachine.'Has 3D Model')
@@ -94,13 +94,4 @@
         X: =123
         Y: =779
         ZIndex: =5
-
-    Image1 As image:
-        Height: =1136
-        Image: =First(ViewInMR1.Photos).ImageURI
-        OnSelect: |-
-            =UpdateContext({ctxShowCapturedImage:false});
-        Visible: =ctxShowCapturedImage
-        Width: =640
-        ZIndex: =7
 

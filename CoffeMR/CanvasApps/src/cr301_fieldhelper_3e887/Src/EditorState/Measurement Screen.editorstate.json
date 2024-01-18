@@ -187,6 +187,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnMeasurementOverlay",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -549,6 +550,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnSaveMeasurement",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -922,6 +924,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnUseAsFilter",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1184,6 +1187,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conEditOverlay",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1354,6 +1358,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conMeasurementContainer",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1538,6 +1543,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conMeasurementContent",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1738,6 +1744,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "conMeasurementHeader",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1850,6 +1857,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1916,7 +1924,8 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ZIndex"
+        "ZIndex",
+        "MaxTemplateSize"
       ],
       "DynamicProperties": [
         {
@@ -1981,6 +1990,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galMeasurements",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2103,6 +2113,11 @@
           "Category": "Design",
           "PropertyName": "LoadingSpinnerColor",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "MaxTemplateSize",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultGalleryStyle",
@@ -2199,6 +2214,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "icnCloseMeasurement",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2465,6 +2481,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2770,6 +2787,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgMeasurements",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2995,6 +3013,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "inpMeasurementValue",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3308,6 +3327,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3605,6 +3625,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblMeasurement",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3916,6 +3937,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblMeasurementName",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4154,6 +4176,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Measurement Screen",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4284,6 +4307,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "recDialogBackground",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
