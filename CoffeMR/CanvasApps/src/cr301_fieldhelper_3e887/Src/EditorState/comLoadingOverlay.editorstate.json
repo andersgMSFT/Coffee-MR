@@ -40,6 +40,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "comLoadingOverlay",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -170,6 +171,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
