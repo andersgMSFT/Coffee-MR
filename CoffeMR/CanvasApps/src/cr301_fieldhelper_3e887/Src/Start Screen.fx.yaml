@@ -29,9 +29,10 @@
             Y: =40
             ZIndex: =1
 
-        Container3 As groupContainer.verticalAutoLayoutContainer:
+        conLogo As groupContainer.verticalAutoLayoutContainer:
             FillPortions: =0
             Height: =450
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
             LayoutMinHeight: =100
@@ -40,7 +41,6 @@
             ZIndex: =2
 
             icnLogoPlaceholder As icon.Shop:
-                AlignInContainer: =AlignInContainer.Center
                 Color: =RGBA(255, 255, 255, 1)
                 DisplayMode: =DisplayMode.View
                 Height: =Self.Width
@@ -49,9 +49,8 @@
                 Y: =40
                 ZIndex: =1
 
-            Label1 As label:
+            lblTitle As label:
                 Align: =Align.Center
-                AlignInContainer: =AlignInContainer.Center
                 Color: =RGBA(255, 255, 255, 1)
                 Font: =varTheme.font
                 Height: =100

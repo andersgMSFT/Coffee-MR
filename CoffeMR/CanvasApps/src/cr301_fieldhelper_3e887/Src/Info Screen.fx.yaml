@@ -57,10 +57,3 @@
             =Parent.Width - Self.Width
         ZIndex: =2
 
-    Icon2 As icon.ArrowRight:
-        Icon: =Icon.ArrowRight
-        OnSelect: =Navigate('Debug screen');
-        X: =576
-        Y: =1072
-        ZIndex: =3
-

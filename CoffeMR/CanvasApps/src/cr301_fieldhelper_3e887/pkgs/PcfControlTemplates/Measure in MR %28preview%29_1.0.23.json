@@ -9,6 +9,7 @@
         "PropertyKind": 2,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 29,
         "WizardStep": null
       },
@@ -20,6 +21,7 @@
         "PropertyKind": 1,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -31,6 +33,7 @@
         "PropertyKind": 2,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 30,
         "WizardStep": null
       },
@@ -42,6 +45,7 @@
         "PropertyKind": 2,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -53,6 +57,7 @@
         "PropertyKind": 1,
         "SectionIndex": 1,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -64,6 +69,7 @@
         "PropertyKind": 1,
         "SectionIndex": 6,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -75,6 +81,7 @@
         "PropertyKind": 2,
         "SectionIndex": 6,
         "SectionName": null,
+        "SectionType": null,
         "Type": 29,
         "WizardStep": null
       },
@@ -86,6 +93,7 @@
         "PropertyKind": 2,
         "SectionIndex": 6,
         "SectionName": null,
+        "SectionType": null,
         "Type": 31,
         "WizardStep": null
       },
@@ -97,6 +105,7 @@
         "PropertyKind": 2,
         "SectionIndex": 6,
         "SectionName": null,
+        "SectionType": null,
         "Type": 32,
         "WizardStep": null
       },
@@ -108,6 +117,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -119,6 +129,7 @@
         "PropertyKind": 1,
         "SectionIndex": 1,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -130,6 +141,7 @@
         "PropertyKind": 2,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 32,
         "WizardStep": null
       },
@@ -141,6 +153,7 @@
         "PropertyKind": 1,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 33,
         "WizardStep": null
       },
@@ -152,6 +165,7 @@
         "PropertyKind": 1,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -163,6 +177,7 @@
         "PropertyKind": 1,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 34,
         "WizardStep": null
       },
@@ -174,6 +189,7 @@
         "PropertyKind": 2,
         "SectionIndex": 3,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -185,6 +201,7 @@
         "PropertyKind": 2,
         "SectionIndex": 6,
         "SectionName": null,
+        "SectionType": null,
         "Type": 29,
         "WizardStep": null
       },
@@ -196,6 +213,7 @@
         "PropertyKind": 2,
         "SectionIndex": 6,
         "SectionName": null,
+        "SectionType": null,
         "Type": 31,
         "WizardStep": null
       },
@@ -207,6 +225,7 @@
         "PropertyKind": 2,
         "SectionIndex": 6,
         "SectionName": null,
+        "SectionType": null,
         "Type": 32,
         "WizardStep": null
       },
@@ -218,6 +237,7 @@
         "PropertyKind": 2,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 35,
         "WizardStep": null
       },
@@ -229,6 +249,7 @@
         "PropertyKind": 1,
         "SectionIndex": 2,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -240,6 +261,7 @@
         "PropertyKind": 1,
         "SectionIndex": 1,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -251,6 +273,7 @@
         "PropertyKind": 1,
         "SectionIndex": 4,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -262,6 +285,7 @@
         "PropertyKind": 1,
         "SectionIndex": 4,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -273,6 +297,7 @@
         "PropertyKind": 1,
         "SectionIndex": 4,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -284,6 +309,7 @@
         "PropertyKind": 1,
         "SectionIndex": 4,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -295,6 +321,7 @@
         "PropertyKind": 2,
         "SectionIndex": 6,
         "SectionName": null,
+        "SectionType": null,
         "Type": 29,
         "WizardStep": null
       },
@@ -306,6 +333,7 @@
         "PropertyKind": 2,
         "SectionIndex": 6,
         "SectionName": null,
+        "SectionType": null,
         "Type": 31,
         "WizardStep": null
       },
@@ -317,6 +345,7 @@
         "PropertyKind": 2,
         "SectionIndex": 6,
         "SectionName": null,
+        "SectionType": null,
         "Type": 32,
         "WizardStep": null
       },
@@ -328,6 +357,7 @@
         "PropertyKind": 2,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 37,
         "WizardStep": null
       },
@@ -339,6 +369,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -350,6 +381,7 @@
         "PropertyKind": 1,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 40,
         "WizardStep": null
       },
@@ -361,6 +393,7 @@
         "PropertyKind": 2,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 31,
         "WizardStep": null
       },
@@ -372,6 +405,7 @@
         "PropertyKind": 2,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 36,
         "WizardStep": null
       },
@@ -383,6 +417,7 @@
         "PropertyKind": 1,
         "SectionIndex": 1,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -394,6 +429,7 @@
         "PropertyKind": 1,
         "SectionIndex": 5,
         "SectionName": null,
+        "SectionType": null,
         "Type": 42,
         "WizardStep": null
       },
@@ -405,6 +441,7 @@
         "PropertyKind": 1,
         "SectionIndex": 3,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -416,6 +453,7 @@
         "PropertyKind": 2,
         "SectionIndex": 3,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -427,6 +465,7 @@
         "PropertyKind": 2,
         "SectionIndex": 3,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -438,6 +477,7 @@
         "PropertyKind": 2,
         "SectionIndex": 3,
         "SectionName": null,
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       }
@@ -451,6 +491,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -462,6 +503,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -473,6 +515,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -484,6 +527,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -495,6 +539,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -506,6 +551,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -517,6 +563,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -528,6 +575,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -539,6 +587,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -550,6 +599,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -561,6 +611,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -572,6 +623,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -583,6 +635,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -594,6 +647,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -605,6 +659,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -616,6 +671,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -627,6 +683,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -638,6 +695,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -649,6 +707,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -660,6 +719,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -671,6 +731,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -682,6 +743,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -693,6 +755,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -704,6 +767,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -715,6 +779,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -726,6 +791,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -737,6 +803,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -748,6 +815,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -759,6 +827,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -770,6 +839,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -781,6 +851,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -792,6 +863,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       },
@@ -803,6 +875,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": "Design",
+        "SectionType": null,
         "Type": 0,
         "WizardStep": null
       }
@@ -814,14 +887,16 @@
       "DisplayName": "OnChange",
       "Hidden": false,
       "IsPrimaryInput": false,
-      "Name": "OnChange"
+      "Name": "OnChange",
+      "PfxDefaultValue": null
     },
     {
       "Description": "",
       "DisplayName": "OnSelect",
       "Hidden": false,
       "IsPrimaryInput": false,
-      "Name": "OnSelect"
+      "Name": "OnSelect",
+      "PfxDefaultValue": null
     }
   ],
   "ControlConstructor": "MeasureInMR",
@@ -833,7 +908,8 @@
       "DisplayName": "On Mixed Reality Select",
       "Hidden": false,
       "IsPrimaryInput": false,
-      "Name": "OnMixedRealitySelect"
+      "Name": "OnMixedRealitySelect",
+      "PfxDefaultValue": null
     }
   ],
   "IncludedProperties": [

@@ -482,7 +482,7 @@
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |
             =UpdateContext({ctxShowLoadingScreen: true, ctxError: false});
-            // Hard coded to use 'School of Fine Art'
+            // Hard coded to use first customer in list
             Set(varSelectedCustomer, LookUp('customers (v2.0)', 'No.' = "30000"));
             
             Set(varCreatedSalesOrder, Patch(
@@ -497,13 +497,12 @@
             );
             
             // Call flow to upload images
-            Set(varImageContent, Last(ViewInMR1.Photos).ImageURI);
+            Set(varImageContent, Last(ViewInMRControl.Photos).ImageURI);
             If(Not(IsBlankOrError(varImageContent)),
                 UploadImageToSalesOrder.Run(varCreatedSalesOrder.Id, {file:{name:GUID() & ".png", contentBytes:varImageContent}});
             );
             
             
-            // If all patches succeeded, continue to success screen
             ClearCollect(colSelectedItems, Blank());
             UpdateContext({ctxShowLoadingScreen: false});
             Navigate('Success Screen', ScreenTransition.Fade);
