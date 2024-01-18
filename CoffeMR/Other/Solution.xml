@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.23094.220" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.23113.214" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>CoffeMR</UniqueName>
     <LocalizedNames>
-      <LocalizedName description="CoffeMR" languagecode="1033" />
+      <LocalizedName description="CoffeeMR" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.26.0</Version>
+    <Version>1.0.29.0</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Cr541ef</UniqueName>
@@ -81,6 +81,15 @@
       <RootComponent type="29" id="{aba81736-12d9-ed11-a7c7-000d3a991110}" behavior="0" />
       <RootComponent type="300" schemaName="cr301_fieldhelper_3e887" behavior="0" />
     </RootComponents>
-    <MissingDependencies />
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="new_shareddynamicssmbsaas_9cc60" solution="Active" id.connectionreferencelogicalname="new_shareddynamicssmbsaas_9cc60" />
+        <Dependent type="29" displayName="UploadImageToSalesOrder" id="{aba81736-12d9-ed11-a7c7-000d3a991110}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="new_shareddynamicssmbsaas_f4e3d" solution="Active" id.connectionreferencelogicalname="new_shareddynamicssmbsaas_f4e3d" />
+        <Dependent type="29" displayName="UploadImageToSalesOrder" id="{aba81736-12d9-ed11-a7c7-000d3a991110}" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>

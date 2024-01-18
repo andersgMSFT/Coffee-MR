@@ -64,6 +64,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -272,6 +273,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Debug screen",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -385,6 +387,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image1_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -661,6 +664,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ViewInMR1_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [

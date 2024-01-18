@@ -180,3 +180,37 @@
                 Width: =Parent.Width
                 ZIndex: =2
 
+    conEmptyListNotification As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Center
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutJustifyContent: =LayoutJustifyContent.Center
+        LayoutMode: =LayoutMode.Auto
+        Visible: =galCoffeeMachine.AllItemsCount = 0
+        Width: =Parent.Width
+        ZIndex: =2
+
+        conNotificationContent As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.Center
+            BorderColor: =RGBA(237, 237, 237, 1)
+            BorderThickness: =1
+            Fill: =varTheme.secondaryColor
+            FillPortions: =0
+            Height: =400
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =400
+            ZIndex: =3
+
+            lblNotificationText As label:
+                Align: =Align.Center
+                Height: =Parent.Height
+                Size: =21
+                Text: ="To add coffee machines to the list to go Business Central and make sure you enable the ""Is available for Field worker"" flag"
+                Width: =Parent.Width
+                ZIndex: =1
+
