@@ -1,19 +1,10 @@
 {
   "properties": {
     "connectionReferences": {
-      "shared_dynamicssmbsaas_2": {
+      "shared_dynamicssmbsaas_1": {
         "runtimeSource": "invoker",
         "connection": {
-          "connectionReferenceLogicalName": "new_shareddynamicssmbsaas_f4e3d"
-        },
-        "api": {
-          "name": "shared_dynamicssmbsaas"
-        }
-      },
-      "shared_dynamicssmbsaas": {
-        "runtimeSource": "invoker",
-        "connection": {
-          "connectionReferenceLogicalName": "new_shareddynamicssmbsaas_9cc60"
+          "connectionReferenceLogicalName": "cr301_BcConnection"
         },
         "api": {
           "name": "shared_dynamicssmbsaas"
@@ -84,7 +75,7 @@
           "type": "OpenApiConnection",
           "inputs": {
             "host": {
-              "connectionName": "shared_dynamicssmbsaas_2",
+              "connectionName": "shared_dynamicssmbsaas_1",
               "operationId": "PostItemV3",
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_dynamicssmbsaas"
             },
@@ -140,7 +131,7 @@
           "type": "OpenApiConnection",
           "inputs": {
             "host": {
-              "connectionName": "shared_dynamicssmbsaas",
+              "connectionName": "shared_dynamicssmbsaas_1",
               "operationId": "PatchBlobFromNavigationV3",
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_dynamicssmbsaas"
             },
