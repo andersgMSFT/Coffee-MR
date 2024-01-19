@@ -9,9 +9,13 @@ page 70030 "Coffee MR Sample"
     {
         area(Content)
         {
-            label(Processing)
+            label(Description)
             {
-                Caption = 'This is a sample page to generate and delete data for the Coffee MR sample.';
+                Caption = 'This is a sample page to simplify the generation and management of demo data for the Coffee MR sample.';
+            }
+            label(AdditionalDescription)
+            {
+                Caption = 'Note: To use the 3D model, you have to upload a model to the desired item.';
             }
 
             part(PowerAppItems; CoffeeItemsListPart)
