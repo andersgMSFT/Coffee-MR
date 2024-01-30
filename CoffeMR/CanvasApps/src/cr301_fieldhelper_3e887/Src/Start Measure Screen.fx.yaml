@@ -77,14 +77,13 @@
 
     icnCloseActionScreen As icon.ChevronLeft:
         Color: =Color.White
-        Height: =100 
-        Icon: =Icon.Cancel
-        OnSelect: =Navigate('Start Screen', ScreenTransition.UnCoverRight);
+        Height: =80
+        Icon: =Icon.ChevronLeft
+        OnSelect: =Back(ScreenTransition.UnCoverRight)
         PaddingBottom: =20
         PaddingLeft: =20
         PaddingRight: =20
         PaddingTop: =20
-        Width: =100
-        X: =Parent.Width - Self.Width
+        Width: =80
         ZIndex: =2
 

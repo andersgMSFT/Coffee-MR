@@ -1,6 +1,10 @@
 {
   "FormatVersion": "0.24",
   "Header": {
+    "AnalysisOptions": {
+      "DataflowAnalysisEnabled": false,
+      "DataflowAnalysisFlagStateToggledByUser": false
+    },
     "DocVersion": "1.336",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
@@ -130,12 +134,12 @@
   "ScreenOrder": [
     "Start Screen",
     "Info Screen",
+    "Customer List Screen",
     "Start Measure Screen",
     "Measurement Screen",
     "Coffee Machines List Screen",
     "Coffee Machine screen",
     "Extras List Screen",
-    "Extra Screen",
     "Summary Screen",
     "Success Screen",
     "Debug screen"
