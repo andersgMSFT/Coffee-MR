@@ -17,5 +17,20 @@ tableextension 70030 CoffeeItem extends Item
             Caption = '3D model';
             DataClassification = CustomerContent;
         }
+        field(70033; ItemHeight; Decimal)
+        {
+            Caption = 'Item Height';
+            DataClassification = CustomerContent;
+        }
+        field(70034; ItemWidth; Decimal)
+        {
+            Caption = 'Item Width';
+            DataClassification = CustomerContent;
+        }
+        field(70035; ItemDepth; Decimal)
+        {
+            Caption = 'Item Depth';
+            DataClassification = CustomerContent;
+        }
     }
 }

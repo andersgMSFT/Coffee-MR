@@ -15,7 +15,7 @@ page 70030 "Coffee MR Sample"
             }
             label(AdditionalDescription)
             {
-                Caption = 'Note: To use the 3D model, you have to upload a model to the desired item.';
+                Caption = 'To use the mixed reality model rendering, you have to upload a 3D model to the using the Business Central Item page.';
             }
 
             part(PowerAppItems; CoffeeItemsListPart)
@@ -32,6 +32,9 @@ page 70030 "Coffee MR Sample"
             actionref(PromotedGenerateTestData; GenerateTestData)
             {
             }
+            actionref(PromotedOpenSampleDocs; OpenSampleDocs)
+            {
+            }
         }
         area(Processing)
         {
@@ -44,6 +47,17 @@ page 70030 "Coffee MR Sample"
                     myCodeUnit: Codeunit CoffeDemoDataGenerator;
                 begin
                     myCodeUnit.GenerateDemoData();
+                end;
+            }
+
+            action(OpenSampleDocs)
+            {
+                ApplicationArea = All;
+                Caption = 'Open CoffeeMR docs';
+
+                trigger OnAction()
+                begin
+                    Hyperlink('https://github.com/microsoft/bcsamples-CoffeeMR/?tab=readme-ov-file#preview-business-central-samples---coffee-mr');
                 end;
             }
         }

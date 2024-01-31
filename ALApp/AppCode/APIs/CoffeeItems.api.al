@@ -76,6 +76,18 @@ page 70032 CoffeeItems
                 {
                     Caption = 'Has 3D Model';
                 }
+                field(ItemHeight; Rec.ItemHeight)
+                {
+                    Caption = 'Item Height';
+                }
+                field(ItemWidth; Rec.ItemWidth)
+                {
+                    Caption = 'Item Width';
+                }
+                field(ItemLength; Rec.ItemDepth)
+                {
+                    Caption = 'Item Depth';
+                }
             }
         }
     }

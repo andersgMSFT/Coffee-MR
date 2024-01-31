@@ -26,6 +26,18 @@ page 70031 CoffeeItemsListPart
                 {
                     ApplicationArea = All;
                 }
+                field(ItemHeight; Rec.ItemHeight)
+                {
+                    ApplicationArea = All;
+                }
+                field(ItemWidth; Rec.ItemWidth)
+                {
+                    ApplicationArea = All;
+                }
+                field(ItemDepth; Rec.ItemDepth)
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }

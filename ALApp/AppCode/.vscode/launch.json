@@ -6,7 +6,7 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "sandboxuk",
+            "environmentName": "CoffeeMRTest",
             "startupObjectId": 70030,
             "startupObjectType": "Page",
             "breakOnError": "All",
