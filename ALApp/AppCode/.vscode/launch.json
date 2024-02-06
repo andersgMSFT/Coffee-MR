@@ -6,13 +6,15 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "environmentName": "sandboxuk",
+            "environmentName": "CoffeeMRTest",
             "startupObjectId": 70030,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": false,
             "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true
+            "enableSqlInformationDebugger": true,
+            "forceUpgrade": true,
+            "schemaUpdateMode": "ForceSync"
         }
     ]
 }

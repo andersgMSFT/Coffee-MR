@@ -6,7 +6,7 @@
     "Dev"
   ],
   "DeployToDev": {
-    "environmentName": "CoffeeMRTest",
+    "environmentName": "sandbox",
     "companyId": "36e47147-6fab-ee11-a56d-6045bdc8a8eb",
     "ppEnvironmentUrl": "https://org77eb6555.crm.dynamics.com"
   }

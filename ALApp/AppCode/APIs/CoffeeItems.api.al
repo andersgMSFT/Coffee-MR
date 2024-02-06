@@ -60,9 +60,9 @@ page 70032 CoffeeItems
                 {
                     Caption = 'Long description';
                 }
-                field(isAvailableForFieldWorkers; Rec.IsAvialableForFieldWorker)
+                field(showInCoffeeMRApp; Rec.ShowInCoffeeMRApp)
                 {
-                    Caption = 'Is available for field workers';
+                    Caption = 'Show Item in Coffee MR App';
                 }
                 field(picture; NameValueBufferBlob."Value BLOB")
                 {
@@ -75,6 +75,18 @@ page 70032 CoffeeItems
                 field(has3DModel; Has3DModel)
                 {
                     Caption = 'Has 3D Model';
+                }
+                field(ItemHeight; Rec.ItemHeight)
+                {
+                    Caption = 'Item Height';
+                }
+                field(ItemWidth; Rec.ItemWidth)
+                {
+                    Caption = 'Item Width';
+                }
+                field(ItemDepth; Rec.ItemDepth)
+                {
+                    Caption = 'Item Depth';
                 }
             }
         }
