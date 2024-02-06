@@ -50,3 +50,24 @@
         Y: =9
         ZIndex: =4
 
+    Button1 As button:
+        Height: =70
+        OnSelect: |-
+            =Set(varTest, Filter(
+                        'coffeeItems (microsoft/powerApps/beta)',
+                        And(
+                            'Item Category Code' = "finishedGoods",
+                            'Item Height' < 100,
+                            'Item Width' < 100,
+                            'Item Depth' < 100
+                        )
+                    ));
+            Set(varTestItem, First(varTest));
+            Notify(varTestItem.'Item Height' && varTestItem.DisplayName);
+        Size: =24
+        Text: ="Button"
+        Width: =280
+        X: =178
+        Y: =778
+        ZIndex: =5
+
