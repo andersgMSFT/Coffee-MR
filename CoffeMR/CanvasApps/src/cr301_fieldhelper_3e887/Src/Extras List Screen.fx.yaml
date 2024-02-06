@@ -184,13 +184,8 @@
                 Height: =Parent.TemplateHeight
                 HoverFill: =Color.Transparent
                 OnSelect: |-
-                    =If(
-                        Not(IsBlank(ctxItemShowingQuantityControl)),
-                        // Dismiss the quantity control
-                        UpdateContext({ctxItemShowingQuantityControl: Blank()}),
-                        // Open the selected Item
-                        Navigate('Extra Screen', ScreenTransition.Cover, {ctxSelectedItem: ThisItem})
-                    )
+                    =UpdateContext({ctxItemShowingQuantityControl: Blank()})
+                     
                 PressedFill: =Color.Transparent
                 Width: =Parent.TemplateWidth
                 ZIndex: =7
@@ -505,7 +500,7 @@
             Height: =icnDeleteSelection.Height
             OnSelect: =
             Size: =20
-            Text: =varSelectedCoffeeMachine.DisplayName
+            Text: =varSelectedCoffeeMachine.displayName
             Width: =Parent.Width
             ZIndex: =2
 

@@ -121,7 +121,9 @@
             Height: =80
             HoverColor: =varTheme.primaryColor
             HoverFill: =Self.Fill
-            OnSelect: =Navigate('Coffee Machines List Screen', ScreenTransition.Cover);
+            OnSelect: |-
+                =Refresh('coffeeItems (microsoft/powerApps/beta)');
+                Navigate('Coffee Machines List Screen', ScreenTransition.Cover);
             RadiusBottomLeft: =80
             RadiusBottomRight: =80
             RadiusTopLeft: =80

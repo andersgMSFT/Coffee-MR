@@ -70,7 +70,7 @@
             Height: =Self.Width
             HoverColor: =Self.Color
             HoverFill: =RGBA(241, 244, 249, 1)
-            OnSelect: =Navigate('Start Measure Screen', ScreenTransition.Cover);
+            OnSelect: =Navigate('Customer List Screen', ScreenTransition.Cover);
             PressedColor: =Self.Color  
             RadiusBottomLeft: =Self.Width / 2
             RadiusBottomRight: =Self.Width / 2

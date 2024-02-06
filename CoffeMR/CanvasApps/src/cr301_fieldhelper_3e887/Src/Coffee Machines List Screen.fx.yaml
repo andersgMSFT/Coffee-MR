@@ -2,7 +2,7 @@
     Fill: =varTheme.brandColor
     OnVisible: |
         =UpdateContext({
-            ctxShowFilter: CountRows(colMeasurements) > 0,
+            ctxHasFilter: CountRows(colMeasurements) > 0,
             ctxFilterHeight: LookUp(colMeasurements, name = "Height").value,
             ctxFilterWidth: LookUp(colMeasurements, name = "Width").value,
             ctxFilterDepth: LookUp(colMeasurements, name = "Depth").value
@@ -20,7 +20,7 @@
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =varTheme.brandColor
             FillPortions: =0
-            Height: =If(ctxShowFilter, 140, 80)
+            Height: =If(ctxHasFilter, 140, 80)
             LayoutMinHeight: =112
             LayoutMinWidth: =250
             X: =40
@@ -29,7 +29,7 @@
 
             conCoffeeFilter As groupContainer:
                 Height: =80
-                Visible: =ctxShowFilter
+                Visible: =ctxHasFilter
                 Width: =430
                 X: =105
                 Y: =Parent.Height - Self.Height
@@ -68,7 +68,7 @@
                     Height: =30
                     Icon: =Icon.CancelBadge
                     OnSelect: |-
-                        =UpdateContext({ctxShowFilter:false})
+                        =UpdateContext({ctxHasFilter: false})
                     Width: =30
                     X: =345
                     Y: =25
@@ -106,7 +106,36 @@
             galCoffeeMachine As gallery.galleryVertical:
                 DelayItemLoading: =true
                 Height: =Parent.Height
-                Items: =Filter('coffeeItems (microsoft/powerApps/beta)', 'Item Category Code' = "finishedGoods")
+                Items: |-
+                    =ShowColumns(
+                        If(
+                            ctxHasFilter,
+                            Filter(
+                                'coffeeItems (microsoft/powerApps/beta)',
+                                And(
+                                    'Item Category Code' = "finishedGoods",
+                                    'Item Height' < ctxFilterHeight,
+                                    'Item Width' < ctxFilterWidth,
+                                    'Item Depth' < ctxFilterDepth
+                                )
+                            ),
+                            Filter(
+                                'coffeeItems (microsoft/powerApps/beta)',
+                                'Item Category Code' = "finishedGoods"
+                            )
+                        ),
+                        "displayName",
+                        "itemCategoryCode",
+                        "ItemHeight",
+                        "ItemWidth",
+                        "ItemLength",
+                        "picture",
+                        "has3DModel",
+                        "itemImageText",
+                        "id",
+                        "unitPrice",
+                        "model3D"
+                    )
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-
@@ -133,7 +162,7 @@
                     imgCoffeeMachine As image:
                         BorderColor: =RGBA(237, 237, 237, 1)
                         Height: =258
-                        Image: =ThisItem.Picture
+                        Image: =ThisItem.picture
                         ImagePosition: =ImagePosition.Fill
                         OnSelect: =
                         RadiusBottomLeft: =5
@@ -152,7 +181,7 @@
                         Height: =70
                         OnSelect: =
                         Size: =21
-                        Text: =ThisItem.DisplayName
+                        Text: =ThisItem.displayName
                         Width: =500
                         Y: =274
                         ZIndex: =2

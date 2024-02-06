@@ -1,0 +1,126 @@
+"'Customer List Screen' As screen":
+    Fill: =varTheme.brandColor
+    OnVisible: |
+        =UpdateContext({
+            ctxShowFilter: CountRows(colMeasurements) > 0,
+            ctxFilterHeight: LookUp(colMeasurements, name = "Height").value,
+            ctxFilterWidth: LookUp(colMeasurements, name = "Width").value,
+            ctxFilterDepth: LookUp(colMeasurements, name = "Depth").value
+        });
+
+    conCustomerList As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        conCustomerListHeader As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =varTheme.brandColor
+            FillPortions: =0
+            Height: =80
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            X: =40
+            Y: =40
+            ZIndex: =1
+
+            lblCustomerListHeader As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                Height: =80
+                Size: =30
+                Text: ="Select a Customer"
+                Width: =640
+                ZIndex: =2
+
+            icnCustomerHeaderBack As icon.ChevronLeft:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =80
+                Icon: =Icon.Cancel
+                OnSelect: =Back(ScreenTransition.UnCoverRight)
+                PaddingBottom: =20
+                PaddingLeft: =20
+                PaddingRight: =20
+                PaddingTop: =20
+                Width: =80
+                X: =Parent.Width - Self.Width
+                ZIndex: =3
+
+        conCustomerListContent As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Height: =225
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            ZIndex: =2
+
+            galCustomers As gallery.galleryVertical:
+                DelayItemLoading: =true
+                Height: =Parent.Height
+                Items: ='customers (v2.0)'
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =Set(varSelectedCoffeeMachine, ThisItem);
+                    Navigate('Coffee Machine screen', ScreenTransition.Cover);
+                ShowScrollbar: =false
+                TemplateSize: =140
+                Width: =Parent.Width
+                ZIndex: =1
+
+                conCustomer As groupContainer.manualLayoutContainer:
+                    BorderColor: =RGBA(237, 237, 237, 1)
+                    BorderThickness: =1
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =80
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    X: =60
+                    Y: =30
+                    ZIndex: =4
+
+                    lblCustomerName As label:
+                        Color: =varTheme.primaryColor
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =80
+                        OnSelect: =
+                        Size: =21
+                        Text: =ThisItem.'Display Name'
+                        Width: =405
+                        X: =95
+                        ZIndex: =2
+
+                    icnCustomer As icon.AddUser:
+                        Color: =varTheme.primaryColor
+                        Height: =40
+                        Icon: =Icon.AddUser
+                        Width: =40
+                        X: =33
+                        Y: =20
+                        ZIndex: =3
+
+                    btnCustomerOverlay As button:
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =Parent.Height
+                        HoverFill: =
+                        OnSelect: |-
+                            =Set(varCustomer, ThisItem);
+                            Navigate('Start Measure Screen', ScreenTransition.Cover);
+                        PressedFill: =Color.Transparent
+                        Size: =24
+                        Text: =""
+                        Width: =Parent.Width
+                        ZIndex: =4
+
+            comCustomerListDivider As comBigDivider:
+                Fill: =Color.Transparent
+                Height: =16
+                Width: =Parent.Width
+                ZIndex: =2
+
