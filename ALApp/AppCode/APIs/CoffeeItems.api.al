@@ -60,9 +60,9 @@ page 70032 CoffeeItems
                 {
                     Caption = 'Long description';
                 }
-                field(isAvailableForFieldWorkers; Rec.ShowInCoffeeMRApp)
+                field(showInCoffeeMRApp; Rec.ShowInCoffeeMRApp)
                 {
-                    Caption = 'Is available for field workers';
+                    Caption = 'Show Item in Coffee MR App';
                 }
                 field(picture; NameValueBufferBlob."Value BLOB")
                 {
