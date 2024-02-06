@@ -2,7 +2,7 @@ page 70031 CoffeeItemsListPart
 {
     PageType = ListPart;
     SourceTable = Item;
-    SourceTableView = where(IsAvialableForFieldWorker = const(true));
+    SourceTableView = where(ShowInCoffeeMRApp = const(true));
 
     layout
     {

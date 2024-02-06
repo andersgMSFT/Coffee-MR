@@ -25,7 +25,7 @@ page 70030 "Coffee MR Sample"
             }
             part(PowerAppItems; CoffeeItemsListPart)
             {
-                Caption = 'Coffee machines and extras';
+                Caption = 'Coffee MR Items';
             }
         }
     }
@@ -35,6 +35,9 @@ page 70030 "Coffee MR Sample"
         area(Promoted)
         {
             actionref(PromotedGenerateTestData; GenerateTestData)
+            {
+            }
+            actionref(PromotedItems; Items)
             {
             }
         }
@@ -49,6 +52,17 @@ page 70030 "Coffee MR Sample"
                     myCodeUnit: Codeunit CoffeDemoDataGenerator;
                 begin
                     myCodeUnit.GenerateDemoData();
+                end;
+            }
+
+            action(Items)
+            {
+                ApplicationArea = All;
+                Caption = 'Go to Items';
+                trigger OnAction()
+                begin
+                    // Navigate to the Items page
+                    Page.Run(31);
                 end;
             }
         }

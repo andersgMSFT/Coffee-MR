@@ -60,7 +60,7 @@ page 70032 CoffeeItems
                 {
                     Caption = 'Long description';
                 }
-                field(isAvailableForFieldWorkers; Rec.IsAvialableForFieldWorker)
+                field(isAvailableForFieldWorkers; Rec.ShowInCoffeeMRApp)
                 {
                     Caption = 'Is available for field workers';
                 }
@@ -84,7 +84,7 @@ page 70032 CoffeeItems
                 {
                     Caption = 'Item Width';
                 }
-                field(ItemLength; Rec.ItemDepth)
+                field(ItemDepth; Rec.ItemDepth)
                 {
                     Caption = 'Item Depth';
                 }

@@ -4,7 +4,7 @@ pageextension 70033 CoffeeItem extends "Item Card"
     {
         addlast(Item)
         {
-            field(IsAvialableForFieldWorker; Rec.IsAvialableForFieldWorker)
+            field(ShowInCoffeeMRApp; Rec.ShowInCoffeeMRApp)
             {
                 ApplicationArea = All;
                 Editable = true;
@@ -24,7 +24,7 @@ pageextension 70033 CoffeeItem extends "Item Card"
                 ApplicationArea = All;
                 Editable = true;
             }
-            field(uploadModel3d; uploadModelLabel)
+            field(UploadModel3d; uploadModelLabel)
             {
                 ApplicationArea = All;
                 Caption = '3D model';

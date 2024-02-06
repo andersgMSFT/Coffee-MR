@@ -1,11 +1,7 @@
 codeunit 70032 CoffeDemoDataGenerator
 {
     var
-        DeleteDemodataConfirmationQst: Label 'Are you sure you want to delete all sample data generated for the Take Order app?';
-        DemodataDeletedMsg: Label 'Sample data deleted successfully.';
-        DemodataCreatedMsg: Label 'Sample data created successfully.';
         InvalidItemTemplateErr: Label 'We tried to create some sample items, but we could not apply the template "%1". Make sure you are running in an evaluation company with a valid item template.';
-        InvalidCustTemplateErr: Label 'We tried to create some sample customers, but we could not apply the template "%1". Make sure you are running in an evaluation company with a valid customer template.';
 
     procedure GenerateDemoData()
     var
@@ -70,7 +66,7 @@ codeunit 70032 CoffeDemoDataGenerator
         ItemRecord.Validate(Description, ItemName);
         ItemRecord.Validate("Unit Price", UnitPrice);
         ItemRecord.Validate("Item Category Code", itemCategory);
-        ItemRecord.Validate(IsAvialableForFieldWorker, true);
+        ItemRecord.Validate(ShowInCoffeeMRApp, true);
         ItemRecord.Validate(LongDescription, description);
         ItemRecord.Validate(itemheight, itemheight);
         ItemRecord.Validate(itemWidth, itemWidth);
