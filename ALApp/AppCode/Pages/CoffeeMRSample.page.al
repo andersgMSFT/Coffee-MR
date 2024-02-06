@@ -11,13 +11,18 @@ page 70030 "Coffee MR Sample"
         {
             label(Description)
             {
-                Caption = 'This is a sample page to simplify the generation and management of demo data for the Coffee MR sample.';
+                Caption = 'This is a sample page to simplify the generation and management of demo data for the Coffee MR sample. To use the mixed reality model rendering, you have to upload a 3D model to the using the Business Central Item page.';
             }
-            label(AdditionalDescription)
+            field(SampleAppDocumentation; CoffeeSampleDocFieldLabel)
             {
-                Caption = 'To use the mixed reality model rendering, you have to upload a 3D model to the using the Business Central Item page.';
-            }
+                ApplicationArea = All;
+                ShowCaption = false;
 
+                trigger OnDrillDown()
+                begin
+                    Hyperlink('https://github.com/microsoft/bcsamples-CoffeeMR/?tab=readme-ov-file#preview-business-central-samples---coffee-mr');
+                end;
+            }
             part(PowerAppItems; CoffeeItemsListPart)
             {
                 Caption = 'Coffee machines and extras';
@@ -30,9 +35,6 @@ page 70030 "Coffee MR Sample"
         area(Promoted)
         {
             actionref(PromotedGenerateTestData; GenerateTestData)
-            {
-            }
-            actionref(PromotedOpenSampleDocs; OpenSampleDocs)
             {
             }
         }
@@ -49,17 +51,8 @@ page 70030 "Coffee MR Sample"
                     myCodeUnit.GenerateDemoData();
                 end;
             }
-
-            action(OpenSampleDocs)
-            {
-                ApplicationArea = All;
-                Caption = 'Open CoffeeMR docs';
-
-                trigger OnAction()
-                begin
-                    Hyperlink('https://github.com/microsoft/bcsamples-CoffeeMR/?tab=readme-ov-file#preview-business-central-samples---coffee-mr');
-                end;
-            }
         }
     }
+    var
+        CoffeeSampleDocFieldLabel: Label 'Coffee MR Sample Documentation';
 }

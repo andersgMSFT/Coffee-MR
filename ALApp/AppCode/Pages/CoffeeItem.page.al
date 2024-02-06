@@ -24,13 +24,12 @@ pageextension 70033 CoffeeItem extends "Item Card"
                 ApplicationArea = All;
                 Editable = true;
             }
-
             field(uploadModel3d; uploadModelLabel)
             {
                 ApplicationArea = All;
-                ShowCaption = false;
+                Caption = '3D model';
                 Editable = false;
-                ToolTip = 'Learn more about 3D models here: https://learn.microsoft.com/en-us/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models';
+                ToolTip = '3D model that can be rendering inside CoffeeMR see more information about the 3Dmodel under learn more here: https://learn.microsoft.com/en-us/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models';
 
                 trigger OnDrillDown()
                 var
@@ -44,23 +43,14 @@ pageextension 70033 CoffeeItem extends "Item Card"
                         Rec.Model3D.CreateOutStream(model3DOutStream);
                         CopyStream(model3DOutStream, model3DStream);
                         Rec.Modify(true);
-                        uploadModelLabel := 'Overwrite 3D model';
+
+                        // Recalculate the label and don't save
+                        CurrPage.Update(false);
+
                         Message('Model uploaded successfully');
                     end
                     else
                         Message('Upload canceled');
-                end;
-            }
-
-            field(learnAbout3DModel; learnAbout3DModel)
-            {
-                ApplicationArea = All;
-                ShowCaption = false;
-                Editable = false;
-
-                trigger OnDrillDown()
-                begin
-                    Hyperlink('https://learn.microsoft.com/en-us/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models');
                 end;
             }
         }
@@ -68,16 +58,13 @@ pageextension 70033 CoffeeItem extends "Item Card"
 
     trigger OnAfterGetRecord()
     begin
-        learnAbout3DModel := 'Learn more about 3D model';
-
         Rec.SetAutoCalcFields(Model3D);
 
-        uploadModelLabel := 'Upload 3D model';
+        uploadModelLabel := 'Upload';
         if Rec.Model3D.HasValue then
-            uploadModelLabel := 'Overwrite 3D model';
+            uploadModelLabel := 'Overwrite';
     end;
 
     var
         uploadModelLabel: Text;
-        learnAbout3DModel: Text;
 }
