@@ -2,6 +2,7 @@
   "type": "PTE",
   "templateUrl": "https://github.com/microsoft/AL-Go-PTE@PPPreview",
   "powerPlatformSolutionFolder": "CoffeMR",
+  "skipUpgrade": true,
   "environments": [
     "Dev"
   ],
