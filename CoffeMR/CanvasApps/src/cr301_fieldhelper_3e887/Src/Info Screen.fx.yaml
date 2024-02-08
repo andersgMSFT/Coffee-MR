@@ -1,4 +1,5 @@
 "'Info Screen' As screen":
+    Fill: =varTheme.backgroundTeal
 
     conInfoContent As groupContainer:
         Height: =Parent.Height * 0.5
@@ -36,7 +37,7 @@
                 ZIndex: =1
 
             icnInfoIcon As icon.Help:
-                Color: =varTheme.brandColor
+                Color: =Color.Gray
                 Height: =60
                 Icon: =Icon.Help
                 Width: =60

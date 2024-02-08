@@ -1,5 +1,5 @@
 "'Summary Screen' As screen":
-    Fill: =varTheme.brandColor
+    Fill: =varTheme.backgroundWhite
     OnVisible: =Select(btnFunctionLoadOrderSummary);
 
     "galOrderSummary As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
@@ -27,7 +27,6 @@
             ZIndex: =1
 
             lblTotalOrder As label:
-                Color: =RGBA(255, 255, 255, 1)
                 Font: =varTheme.font
                 Height: =80  
                 PaddingBottom: =0
@@ -46,7 +45,6 @@
 
             lblItemTotalSum As label:
                 Align: =Align.Right
-                Color: =RGBA(255, 255, 255, 1)
                 Font: =varTheme.font
                 Height: =80
                 PaddingBottom: =0
@@ -71,7 +69,7 @@
 
             recCurrentOrderDivider As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Fill: =Color.White
+                Fill: =RGBA(166, 166, 166, 1)
                 Height: =2
                 OnSelect: =
                 Width: =Parent.Width - 40
@@ -82,7 +80,6 @@
             lblSumCost As label:
                 Align: =Align.Right
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(255, 255, 255, 1)
                 Font: =varTheme.font
                 Height: =Parent.Height
                 OnSelect: =
@@ -100,7 +97,6 @@
 
             lblGroupNameExtra As label:
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(255, 255, 255, 1)
                 Font: =varTheme.font
                 Height: =70
                 OnSelect: =
@@ -118,7 +114,7 @@
 
             icnHeaderExpandedState As icon.Add:
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 Height: =30
                 Icon: |-
                     =If(ThisItem.name in colCurrentOrderState_CollapsedGroups, 
@@ -161,7 +157,7 @@
             figItemSeparatorOrderSummary As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
                 DisplayMode: =DisplayMode.View
-                Fill: =varTheme.primaryColor
+                Fill: =RGBA(166, 166, 166, 1)
                 Height: =2
                 Width: =Parent.Width
                 X: =
@@ -189,7 +185,6 @@
                 ZIndex: =3
 
                 lblItemPrice_1 As label:
-                    Color: =RGBA(255, 255, 255, 1)
                     DisplayMode: =    DisplayMode.Edit
                     Font: =varTheme.font
                     Height: =35
@@ -206,7 +201,6 @@
                     ZIndex: =1
 
                 lblItemDisplayName_1 As label:
-                    Color: =RGBA(255, 255, 255, 1)
                     Font: =varTheme.font
                     Height: =35
                     PaddingBottom: =0
@@ -235,11 +229,11 @@
                 ZIndex: =4
 
             btnQuantityOrderSummary As button:
-                BorderColor: =Color.White
+                BorderColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =    DisplayMode.Edit
-                Fill: =varTheme.primaryColor
+                Fill: =RGBA(77, 77, 77, 1)
                 Height: =70
-                HoverFill: =varTheme.primaryColor
+                HoverFill: =ColorFade(Self.Fill, 20%)
                 OnSelect: |-
                     =UpdateContext({ctxShowQuantityControlForIs:ThisItem.id})
                 RadiusBottomLeft: =35
@@ -255,7 +249,7 @@
                 ZIndex: =5
 
             conQuantityControlOrderSummary As groupContainer.manualLayoutContainer:
-                Fill: =varTheme.brandColor
+                Fill: =Color.Transparent
                 Height: =Parent.Height - 5
                 Visible: =ThisItem.id = ctxShowQuantityControlForIs
                 Width: =275
@@ -268,7 +262,7 @@
                     BorderThickness: =1
                     DisabledFill: =varTheme.primaryColor
                     DisplayMode: =DisplayMode.View
-                    Fill: =ColorFade(varTheme.primaryColor, -20%)
+                    Fill: =Color.Gray
                     Height: =70
                     HoverFill: =varTheme.primaryColor
                     OnSelect: =
@@ -307,7 +301,7 @@
                 icnQCAddItemOS As icon.ChevronRight:
                     AccessibleLabel: =Self.Tooltip
                     BorderColor: =RGBA(32, 54, 71, 1)
-                    Color: =varTheme.primaryColor
+                    Color: =Color.Black
                     FocusedBorderThickness: =0
                     Height: =80
                     Icon: =Icon.Add
@@ -381,7 +375,7 @@
                 icnQCRemoveItemOS As icon.ChevronRight:
                     AccessibleLabel: =Self.Tooltip
                     BorderColor: =RGBA(32, 54, 71, 1)
-                    Color: =varTheme.primaryColor
+                    Color: =Color.Black
                     Height: =80
                     Icon: =Icon.HorizontalLine
                     OnSelect: |-
@@ -427,8 +421,6 @@
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |
             =UpdateContext({ctxShowLoadingScreen: true, ctxError: false});
-            // Hard coded to use first customer in list
-            Set(varSelectedCustomer, First('customers (v2.0)'));
             
             //TODO: If this code is to be use in production setting, consider adding error handling
             Set(varCreatedSalesOrder, Patch(
@@ -458,7 +450,7 @@
         RadiusBottomRight: =40
         RadiusTopLeft: =40
         RadiusTopRight: =40
-        Size: =24
+        Size: =22
         Text: ="Submit"
         Width: =300
         X: =Parent.Width/2 - Self.Width/2
@@ -472,7 +464,6 @@
 
         lblCurrentOrderNumber As label:
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =Color.White
             Font: =varTheme.font
             Height: =60
             Size: =34
@@ -485,7 +476,6 @@
         lblCurrentOrderTable As label:
             Align: =Align.Center
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =Color.White
             Height: =50
             Size: =30
             Text: ="Order Summary"
@@ -496,7 +486,7 @@
 
         icnBack As icon.ChevronLeft:
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(0, 0, 0, 1)
             Height: =90
             Icon: =Icon.ChevronLeft
             OnSelect: =Back(ScreenTransition.UnCoverRight);
@@ -508,7 +498,7 @@
             Y: =5
             ZIndex: =3
 
-        comBigDivider_2 As comBigDivider:
+        comBigDividerSummeryTop As comBigDivider:
             Height: =16
             Width: =Parent.Width
             Y: =100

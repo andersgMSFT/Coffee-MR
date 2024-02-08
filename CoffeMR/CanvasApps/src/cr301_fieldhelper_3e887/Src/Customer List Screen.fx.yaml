@@ -1,5 +1,5 @@
 "'Customer List Screen' As screen":
-    Fill: =varTheme.brandColor
+    Fill: =varTheme.backgroundDark
     OnVisible: |
         =UpdateContext({
             ctxShowFilter: CountRows(colMeasurements) > 0,
@@ -18,7 +18,7 @@
 
         conCustomerListHeader As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
-            Fill: =varTheme.brandColor
+            Fill: =varTheme.backgroundDark
             FillPortions: =0
             Height: =80
             LayoutMinHeight: =112
@@ -33,7 +33,7 @@
                 Font: =Font.'Segoe UI'
                 Height: =80
                 Size: =30
-                Text: ="Select a Customer"
+                Text: ="Who is buying?"
                 Width: =640
                 ZIndex: =2
 
@@ -68,58 +68,110 @@
                     Navigate('Coffee Machine screen', ScreenTransition.Cover);
                 ShowScrollbar: =false
                 TemplateSize: =140
-                Width: =Parent.Width
+                Width: =Parent.Width - 40
+                X: =20
                 ZIndex: =1
 
-                conCustomer As groupContainer.manualLayoutContainer:
-                    BorderColor: =RGBA(237, 237, 237, 1)
-                    BorderThickness: =1
-                    Fill: =RGBA(255, 255, 255, 1)
-                    Height: =80
-                    RadiusBottomLeft: =10
-                    RadiusBottomRight: =10
-                    RadiusTopLeft: =10
-                    RadiusTopRight: =10
-                    X: =60
-                    Y: =30
-                    ZIndex: =4
+                figMeasurementSeparator_1 As rectangle:
+                    BorderColor: =RGBA(32, 54, 71, 1)
+                    Fill: =Color.LightGray
+                    Height: =2
+                    OnSelect: =
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - 3
+                    ZIndex: =1
 
-                    lblCustomerName As label:
-                        Color: =varTheme.primaryColor
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =80
-                        OnSelect: =
-                        Size: =21
-                        Text: =ThisItem.'Display Name'
-                        Width: =405
-                        X: =95
+                conCustomerContent As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =Parent.TemplateHeight
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+                    conCustomerIcon As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        FillPortions: =0
+                        Height: =140
+                        LayoutMinHeight: =112
+                        LayoutMinWidth: =250
+                        Width: =120
+                        ZIndex: =1
+
+                        imgCustomerIcon As image:
+                            Height: =70
+                            Image: ='Coffee MR customer icon'
+                            Width: =70
+                            X: =Parent.Width/2 - Self.Width/2 - 10
+                            Y: =Parent.Height/2 - Self.Height/2
+                            ZIndex: =2
+
+                    conCustomerLayout As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        Height: =140
+                        LayoutDirection: =LayoutDirection.Vertical
+                        LayoutJustifyContent: =LayoutJustifyContent.Center
+                        LayoutMinHeight: =112
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        Width: =490
+                        X: =630
                         ZIndex: =2
 
-                    icnCustomer As icon.AddUser:
-                        Color: =varTheme.primaryColor
-                        Height: =40
-                        Icon: =Icon.AddUser
-                        Width: =40
-                        X: =33
-                        Y: =20
+                        lblCustomerName As label:
+                            Color: =varTheme.backgroundWhite
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Semibold
+                            LayoutMinHeight: =70
+                            LayoutMinWidth: =560
+                            OnSelect: =
+                            Size: =21
+                            Text: =ThisItem.'Display Name'
+                            Width: =Parent.Width
+                            X: =40
+                            ZIndex: =1
+
+                        lblCustomerContact As label:
+                            Color: =varTheme.backgroundWhite
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Semibold
+                            LayoutMinHeight: =70
+                            LayoutMinWidth: =560
+                            OnSelect: =
+                            Size: =21
+                            Text: =ThisItem.'Address Line 1'
+                            Width: =Parent.Width
+                            X: =40
+                            ZIndex: =2
+
+                    icnSelectCoffeeMachine_1 As icon.ChevronRight:
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =Parent.Height
+                        Icon: =Icon.ChevronRight
+                        PaddingBottom: =55
+                        PaddingTop: =55
                         ZIndex: =3
 
-                    btnCustomerOverlay As button:
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =Parent.Height
-                        HoverFill: =
-                        OnSelect: |-
-                            =Set(varCustomer, ThisItem);
-                            Navigate('Start Measure Screen', ScreenTransition.Cover);
-                        PressedFill: =Color.Transparent
-                        Size: =24
-                        Text: =""
-                        Width: =Parent.Width
-                        ZIndex: =4
+                btnCustomerOverlay As button:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =Parent.TemplateHeight
+                    HoverFill: =
+                    OnSelect: |-
+                        =Set(varSelectedCustomer, ThisItem);
+                        If(
+                            varTakeMeasurement,
+                            Navigate('Start Measure Screen',ScreenTransition.Cover),
+                            Navigate('Coffee Machines List Screen',ScreenTransition.Cover)
+                        )
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedFill: =Color.Transparent
+                    Size: =24
+                    Text: =""
+                    Width: =Parent.Width
+                    ZIndex: =3
 
             comCustomerListDivider As comBigDivider:
-                Fill: =Color.Transparent
                 Height: =16
                 Width: =Parent.Width
                 ZIndex: =2

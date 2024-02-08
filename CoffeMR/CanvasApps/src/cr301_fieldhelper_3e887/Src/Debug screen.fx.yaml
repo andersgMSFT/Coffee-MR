@@ -53,17 +53,7 @@
     Button1 As button:
         Height: =70
         OnSelect: |-
-            =Set(varTest, Filter(
-                        'coffeeItems (microsoft/powerApps/beta)',
-                        And(
-                            'Item Category Code' = "finishedGoods",
-                            'Item Height' < 100,
-                            'Item Width' < 100,
-                            'Item Depth' < 100
-                        )
-                    ));
-            Set(varTestItem, First(varTest));
-            Notify(varTestItem.'Item Height' && varTestItem.DisplayName);
+            =Launch("https://www.figma.com/file/cJvJzP6QuW84pifciPuHVl/BC-Power-App?type=design&node-id=1066-2481&mode=design&t=nksE4MW7bTb4jPyl-0")
         Size: =24
         Text: ="Button"
         Width: =280

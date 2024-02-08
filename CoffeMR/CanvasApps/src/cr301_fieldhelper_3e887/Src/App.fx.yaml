@@ -4,6 +4,9 @@ App As appinfo:
         =// Set theming constants
         Set(varTheme, {
             font: Font.'Segoe UI',
+            backgroundDark:ColorValue("#393939"),
+            backgroundTeal: ColorValue("#d7fbf9"),
+            backgroundWhite: ColorValue("#ffffff"), 
             primaryColor: ColorValue("#139FA9"),    
             brandColor: ColorValue("#139FA9"),
             secondaryColor: Color.White
