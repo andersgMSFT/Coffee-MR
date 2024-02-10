@@ -13,18 +13,27 @@
       "parameterHintsV2": {}
     },
     "datasets": {
-      "CoffeeMRTest,36e47147-6fab-ee11-a56d-6045bdc8a8eb": {
+      "SANDBOX,5736fe89-41bc-ee11-907d-6045bdc8c244": {
         "dataSources": {
           "coffeeItems (microsoft/powerApps/beta)": {
             "tableName": "coffeeItems,microsoft%252FpowerApps%252Fbeta"
+          },
+          "customers (v2.0)": {
+            "tableName": "customers,v2.0"
+          },
+          "salesOrderLines (v2.0)": {
+            "tableName": "salesOrderLines,v2.0"
+          },
+          "salesOrders (v2.0)": {
+            "tableName": "salesOrders,v2.0"
           }
         }
       }
     },
     "dataSources": [
-      "customers (v2.0)",
-      "salesOrders (v2.0)",
       "salesOrderLines (v2.0)",
+      "salesOrders (v2.0)",
+      "customers (v2.0)",
       "coffeeItems (microsoft/powerApps/beta)"
     ],
     "dependencies": {},
@@ -50,7 +59,7 @@
           "value": "aba81736-12d9-ed11-a7c7-000d3a991110"
         },
         "workflowName": {
-          "value": "6ae0b159-ac2b-4aa0-bfc8-fa71bcd7ff24"
+          "value": "17b60185-368a-46ef-9cd8-82daa80780e8"
         }
       },
       "parameterHintsV2": {
@@ -61,7 +70,7 @@
           "value": "aba81736-12d9-ed11-a7c7-000d3a991110"
         },
         "workflowName": {
-          "value": "6ae0b159-ac2b-4aa0-bfc8-fa71bcd7ff24"
+          "value": "17b60185-368a-46ef-9cd8-82daa80780e8"
         }
       }
     },

@@ -1,7 +1,7 @@
 "'Extras List Screen' As screen":
-    Fill: =varTheme.brandColor
+    Fill: =varTheme.AppLight
     OnVisible: |-
-        =ClearCollect(colExtraItems, Filter('coffeeItems (microsoft/powerApps/beta)', 'Is available for field workers'));
+        =ClearCollect(colExtraItems, Filter('coffeeItems (microsoft/powerApps/beta)', showInCoffeeMRApp));
         
         ClearCollect(colExtraItemsCatagory, Distinct(Filter(colExtraItems, 'Item Category Code' <> "FINISHEDGOODS"), 'Item Category Name'));
         Select(galItemGroups, 1);
@@ -14,7 +14,7 @@
 
         lblSelectedItemsSumValue As label:
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =varTheme.TextDark
             Font: =varTheme.font
             Height: =36
             Size: =24
@@ -26,7 +26,7 @@
 
         lblSelectedItemSum As label:
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =varTheme.TextDark
             Font: =varTheme.font
             Height: =36
             Size: =22
@@ -40,7 +40,7 @@
         lblSelectedTotalValue As label:
             Align: =Align.Right
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =varTheme.TextDark
             Font: =varTheme.font
             Height: =39
             Size: =24
@@ -53,7 +53,7 @@
         lblSelectedTotal As label:
             Align: =Align.Right
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =varTheme.TextDark
             Font: =varTheme.font
             Height: =36
             Size: =22
@@ -85,7 +85,7 @@
 
             figItemSeparator As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Fill: =ColorFade(varTheme.primaryColor, 60%)
+                Fill: =Color.LightGray
                 Height: =2
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth - 40
@@ -145,7 +145,6 @@
                 ZIndex: =4
 
             lblItemDisplayName As label:
-                Color: =RGBA(255, 255, 255, 1)
                 Font: =varTheme.font
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
@@ -160,7 +159,6 @@
                 ZIndex: =5
 
             lblItemPrice As label:
-                Color: =RGBA(255, 255, 255, 1)
                 Font: =varTheme.font
                 Height: =35
                 OnSelect: =Select(Parent)
@@ -193,7 +191,7 @@
             icnAddItem As icon.ChevronRight:
                 AccessibleLabel: =Self.Tooltip
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Color: =Color.White
+                Color: =RGBA(0, 0, 0, 1)
                 DisplayMode: |-
                     =If(LookUp(colSelectedItems, id = ThisItem.id).quantity >= 99,
                         DisplayMode.Disabled,
@@ -249,12 +247,16 @@
 
             btnQuantity As button:
                 BorderColor: =Color.White
-                Fill: =varTheme.primaryColor
+                Color: =varTheme.TextLight
+                DisabledColor: =varTheme.TextLight
+                Fill: =varTheme.AppDark
                 Font: =varTheme.font
                 Height: =60
-                HoverFill: =varTheme.primaryColor
+                HoverColor: =varTheme.TextLight
+                HoverFill: =varTheme.AppDark
                 OnSelect: |-
                     =UpdateContext({ctxItemShowingQuantityControl: ThisItem.'System ID'});
+                PressedColor: =varTheme.TextLight
                 RadiusBottomLeft: =35
                 RadiusBottomRight: =35
                 RadiusTopLeft: =35
@@ -287,13 +289,13 @@
                 btnQCBackground As button:
                     BorderColor: =Color.White
                     BorderThickness: =1
-                    DisabledFill: =varTheme.primaryColor
+                    DisabledFill: =varTheme.AppDark
                     DisplayMode: =DisplayMode.View
-                    Fill: =ColorFade(varTheme.primaryColor, -20%)
+                    Fill: =ColorFade(varTheme.AppDark, -20%)
                     Height: =70
-                    HoverFill: =varTheme.primaryColor
+                    HoverFill: =varTheme.AppDark
                     OnSelect: =
-                    PressedFill: =varTheme.primaryColor
+                    PressedFill: =varTheme.AppDark
                     RadiusBottomLeft: =35
                     RadiusBottomRight: =35
                     RadiusTopLeft: =35
@@ -327,7 +329,7 @@
                 icnQCAddItem As icon.ChevronRight:
                     AccessibleLabel: =Self.Tooltip
                     BorderColor: =RGBA(32, 54, 71, 1)
-                    Color: =varTheme.primaryColor
+                    Color: =varTheme.AppDark
                     DisabledColor: =RGBA(202, 202, 202, 1)
                     DisplayMode: |-
                         =If(LookUp(colSelectedItems, id = ThisItem.id).quantity >= 99,
@@ -359,7 +361,7 @@
                     DisabledColor: =Color.White
                     DisabledFill: =Self.Fill
                     DisplayMode: =DisplayMode.Disabled
-                    Fill: =ColorFade(varTheme.primaryColor, -20%)
+                    Fill: =ColorFade(varTheme.AppDark, -20%)
                     Font: =varTheme.font
                     Height: =60
                     HoverBorderColor: =Color.White
@@ -400,7 +402,7 @@
                 icnQCRemoveItem As icon.ChevronRight:
                     AccessibleLabel: =Self.Tooltip
                     BorderColor: =RGBA(32, 54, 71, 1)
-                    Color: =varTheme.primaryColor
+                    Color: =varTheme.AppDark
                     DisabledColor: =RGBA(202, 202, 202, 1)
                     DisplayMode: |-
                         =If(LookUp(colSelectedItems, id = ThisItem.id).quantity <= 0,
@@ -462,7 +464,7 @@
 
             recItemGroupUnderline As rectangle:
                 BorderColor: =RGBA(32, 54, 71, 1)
-                Fill: =RGBA(255, 255, 255, 1)
+                Fill: =varTheme.AppTeal
                 Height: =5
                 OnSelect: =Select(Parent)
                 Visible: =ThisItem.IsSelected
@@ -474,11 +476,13 @@
             btnItemGroup As button:
                 BorderColor: =Color.Transparent
                 BorderThickness: =0
+                Color: =RGBA(0, 0, 0, 1)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =varTheme.font
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Bold, FontWeight.Semibold)
                 Height: =50
                 HoverBorderColor: =Color.Transparent
+                HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =Color.Transparent
                 OnSelect: =Select(Parent)
                 PaddingLeft: =0
@@ -495,18 +499,17 @@
         lblSelectItemsHeader As label:
             Align: =Align.Center
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =Color.White
             Font: =varTheme.font
             Height: =icnDeleteSelection.Height
             OnSelect: =
-            Size: =20
-            Text: =varSelectedCoffeeMachine.displayName
+            Size: =24
+            Text: ="Add related products"
             Width: =Parent.Width
             ZIndex: =2
 
         icnDeleteSelection As icon.Lock:
             BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =Color.White
+            Color: =RGBA(0, 0, 0, 1)
             Height: =Parent.Height - galItemGroups.Height
             Icon: =Icon.ChevronLeft
             OnSelect: |+
@@ -524,7 +527,7 @@
 
     btnReviewSelectedItems As button:
         BorderColor: =Color.White
-        Fill: =varTheme.primaryColor
+        Fill: =varTheme.AppTeal
         Font: =varTheme.font
         Height: =70
         HoverFill: =ColorFade(Self.Fill, -20%)
@@ -549,7 +552,7 @@
             =UpdateContext({ctxItemShowingQuantityControl: Blank(), ctxShowDeleteItemSelectionDialog: false});
             Clear(colSelectedItems);
         Height: =Parent.Height
-        PrimaryColor: =varTheme.primaryColor
+        PrimaryColor: =varTheme.AppTeal
         Visible: =ctxShowDeleteItemSelectionDialog
         Width: =Parent.Width
         ZIndex: =6
