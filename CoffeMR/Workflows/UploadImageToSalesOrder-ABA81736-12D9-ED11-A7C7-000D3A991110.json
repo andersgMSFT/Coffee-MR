@@ -80,8 +80,8 @@
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_dynamicssmbsaas"
             },
             "parameters": {
-              "bcenvironment": "CoffeeMRTest",
-              "company": "36e47147-6fab-ee11-a56d-6045bdc8a8eb",
+              "bcenvironment": "sandbox",
+              "company": "5736fe89-41bc-ee11-907d-6045bdc8c244",
               "dataset": "v2.0",
               "table": "documentAttachments",
               "item/fileName": "Rendered3D.png",
@@ -136,8 +136,8 @@
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_dynamicssmbsaas"
             },
             "parameters": {
-              "bcenvironment": "CoffeeMRTest",
-              "company": "36e47147-6fab-ee11-a56d-6045bdc8a8eb",
+              "bcenvironment": "sandbox",
+              "company": "5736fe89-41bc-ee11-907d-6045bdc8c244",
               "dataset": "v2.0",
               "blobnavigationpath": "salesOrders/documentAttachments/attachmentContent",
               "pathParameters/salesOrders": "@outputs('Create_record_(V3)')?['body/parentId']",
