@@ -36,6 +36,7 @@
       "enablechatbotfeature": false,
       "enablecomponentnamemaps": false,
       "enablecomponentscopeoldbehavior": false,
+      "enablecopilotanswercontrol": false,
       "enablecopilotcontrol": false,
       "enabledataverseoffline": false,
       "enableeditcacherefreshfrequency": false,
@@ -99,7 +100,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 5,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",

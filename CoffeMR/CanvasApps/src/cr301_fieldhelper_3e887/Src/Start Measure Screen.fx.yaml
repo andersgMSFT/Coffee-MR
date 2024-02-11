@@ -1,91 +1,59 @@
 "'Start Measure Screen' As screen":
-    Fill: =varTheme.primaryColor
+    Fill: =varTheme.AppGray
     OnVisible: =Clear(colMeasurements);
 
-    conActions As groupContainer.verticalAutoLayoutContainer:
-        Height: =Parent.Height
-        LayoutAlignItems: =LayoutAlignItems.Center
-        LayoutDirection: =LayoutDirection.Vertical
-        LayoutGap: =Parent.Height * 0.1
-        LayoutJustifyContent: =LayoutJustifyContent.Center
-        LayoutMode: =LayoutMode.Auto
-        Width: =Parent.Width
-        ZIndex: =1
+    "btnMRMeasure As 'Measure in MR (preview)'.pcfdataset":
+        BorderFillColor: =Color.DarkGray
+        BorderRadius: =0
+        BorderThickness: =0
+        BoxDraw: =true
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledContentColor: =RGBA(166, 166, 166, 1)
+        DisabledFillColor: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.Edit
+        DisplayType: ='MeasureInMR.DisplayType'.MSR_Icon
+        EnableShadows: =true
+        FillColor: =RGBA(0, 0, 0, 0)
+        FontSize: =36
+        Height: =250
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverContentColor: =ColorFade(varTheme.AppTeal, 20%)
+        HoverFillColor: =Color.Transparent
+        MeasurementType: ='MeasureInMR.MeasurementType'.Volume
+        OnMixedRealitySelect: |
+            =// You can customize to you scenario. Learn more here https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/measure-your-space-in-mixed-reality
+            Set(varMeasurementObject, {
+                measurements: First(Self.Measurements),
+                image: First(Self.Photos)
+            });
+            
+            If(Not(IsBlank(varMeasurementObject.measurements)),
+                Navigate('Measurement Screen', ScreenTransition.Cover),
+                Navigate('Customer List Screen', ScreenTransition.UnCover)
+            );
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedContentColor: =RGBA(255, 255, 255, 1)
+        PressedFillColor: =Color.Transparent
+        Text: =""
+        TextColor: =varTheme.AppTeal
+        Units: ='MeasureInMR.Units'.MSR_Centimeters
+        Visible: =true
+        Width: =250
+        X: =Parent.Width/2 - Self.Width/2
+        Y: =Parent.Height/2 - Self.Height/2
+        ZIndex: =3
 
-        "mrStartMeasure As 'Measure in MR (preview)'.pcfdataset":
-            BorderFillColor: =RGBA(47, 81, 151, 1)
-            BorderRadius: =50
-            BorderThickness: =0
-            BoxDraw: =true
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledContentColor: =RGBA(166, 166, 166, 1)
-            DisabledFillColor: =RGBA(244, 244, 244, 1)
-            DisplayMode: =DisplayMode.Edit
-            DisplayType: ='MeasureInMR.DisplayType'.MSR_IconText
-            EnableShadows: =true
-            FillColor: =Color.White
-            FontSize: =36
-            Height: =Parent.Height * 0.20
-            HoverBorderColor: =RGBA(88, 115, 171, 1)
-            HoverContentColor: =RGBA(255, 255, 255, 1)
-            HoverFillColor: =ColorFade(varTheme.brandColor, 20%)
-            LayoutMinHeight: =70
-            LayoutMinWidth: =280
-            MeasurementType: ='MeasureInMR.MeasurementType'.Volume
-            OnMixedRealitySelect: |
-                =Set(varMeasurement, First(Self.Measurements));
-                Set(varImage, First(Self.Photos));
-                
-                If(Not(IsBlank(varMeasurement)),
-                    Navigate('Measurement Screen', ScreenTransition.Cover);
-                );
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =RGBA(56, 96, 178, 1)
-            PressedContentColor: =RGBA(255, 255, 255, 1)
-            PressedFillColor: =varTheme.brandColor
-            TextColor: =varTheme.primaryColor
-            Units: ='MeasureInMR.Units'.MSR_Centimeters
-            Width: =Parent.Width * 0.8  
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-        btnPickFromList As button:
-            Color: =varTheme.primaryColor
-            Fill: =Color.White
-            Height: =mrStartMeasure.Height
-            HoverColor: =varTheme.primaryColor
-            HoverFill: =Color.White
-            OnSelect: |-
-                =Refresh('coffeeItems (microsoft/powerApps/beta)');
-                Navigate('Coffee Machines List Screen', ScreenTransition.Cover);
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedColor: =varTheme.primaryColor
-            PressedFill: =Self.Fill
-            RadiusBottomLeft: =50
-            RadiusBottomRight: =50
-            RadiusTopLeft: =50
-            RadiusTopRight: =50
-            Size: =36
-            Text: ="Pick from list"
-            Width: =mrStartMeasure.Width
-            ZIndex: =2
-
-    icnCloseActionScreen As icon.ChevronLeft:
-        Color: =Color.White
-        Height: =80
-        Icon: =Icon.ChevronLeft
-        OnSelect: =Back(ScreenTransition.UnCoverRight)
-        PaddingBottom: =20
-        PaddingLeft: =20
-        PaddingRight: =20
-        PaddingTop: =20
-        Width: =80
-        ZIndex: =2
+    timMeasurementStarter As timer:
+        AutoStart: =true
+        Duration: =10
+        Height: =70
+        OnTimerEnd: =Select(btnMRMeasure);
+        Visible: =false
+        Width: =280
+        X: =210
+        ZIndex: =4
 
