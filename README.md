@@ -1,26 +1,16 @@
 # [Preview] Business Central samples - Coffee MR
+Discover the future of industrial sales and planning with the Coffee MR sample. This scenario leverages the mixed reality (MR) capabilities of Power Apps, integrated with Business Central's comprehensive data and business logic. The scenario is designed for companies selling industrial coffee solutions, transforming how space measurement and product visualization are approached.
 
-The **Coffee MR** sample showcases an application of mixed reality (MR) within Power Apps, using Business Central data.
+This sample contains a Business Central extension, and a Power Platform solution consisting of a Power App and a Power Automate flow. 
 
-This scenario is designed for field workers at a coffee machine installation company, aiming to simplify the measurement process and offer a visual preview of the final product placement using mixed reality.
+The Business Central extension adds a CoffeeItems API that is used by the Power App and extends the BC Items data model to include a 3Dmodel and special information.
+The extension has a test page called “Coffee MR Sample” that lets you generate dummy sample data to try out the sample. 
 
-The sample contains a Business Central extension, a Power App and a Power Automate flow. The extension augments the Business Central data model with additional fields and APIs, while the Power App and Power Automate flow utilize the new capabilities to provide a mixed reality experience for the user.
+To use the 3D rendering capability, you need to upload a 3D-model to one of the BC items you want to show in the app. There is a sample 3D object available [here](https://github.com/andersgMSFT/Coffee-MR/tree/main/Sample%20Data) 
 
- The extension adds the appropriate APIs and extends the items table with the following fields:
-
-  - *IsAvialableForFieldWorker*: Indicates if the item should appear in the app.
-  - *DetailedDescription*: Optional fields offering comprehensive details about the coffee machines.
-  - *3DModel*: A blob containing a 3dModel of the item.
-
-Additionally, the BC extension includes a sample data page named **Coffee MR Sample Data**, with a function to generate sample coffee machine models.
-
-There is a simple 3d model included in this repo under [Sample data](https://github.com/andersgMSFT/Coffee-MR/tree/main/Sample%20Data). You can upload this to an item through the item page in BC to try it out in the Power App.
-
-Because this is meant as a demo to showcase the platform's mixed reality capabilities there are a few known limitations in the App that you should be aware of if you want to use this as a starting point for your own app:
-
-- The sample data generator has been tested and optimized for US versions of the platform. Adaptations may be required for different regional settings.
-- The generated Invoice uses the first customer from the customer API to simplify the demo flow.
-- The labels in the app are currently hardcoded to English. You can see patterns for supporting multiple languages in our [Power Apps Best Practices](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/powerplatform/power-apps-best-practices#set-up-multi-language-support-with-business-central)
+Notes: 
+-	The sample data generator has only been tested with US versions of Business Central. Adjustments may be necessary for other locales.
+-	The sample is optimized for US versions of Business Central and contains hardcoded strings in English. For multi-language support, refer to our [best practices guide](https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/powerplatform/power-apps-best-practices#set-up-multi-language-support-with-business-central)
 
 
 ## Try the sample yourself
