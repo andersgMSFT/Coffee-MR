@@ -29,7 +29,7 @@ page 70032 CoffeeItems
                 }
                 field(displayName; Rec.Description)
                 {
-                    Caption = 'DisplayName';
+                    Caption = 'Display Name';
                 }
                 field("unitPrice"; Rec."Unit Price")
                 {
@@ -54,15 +54,15 @@ page 70032 CoffeeItems
                 }
                 field(itemImageText; Rec.Picture)
                 {
-                    Caption = 'Picture reference';
+                    Caption = 'Picture Reference';
                 }
                 field(longDescription; Rec.LongDescription)
                 {
-                    Caption = 'Long description';
+                    Caption = 'Long Description';
                 }
                 field(showInCoffeeMRApp; Rec.ShowInCoffeeMRApp)
                 {
-                    Caption = 'Show Item in Coffee MR App';
+                    Caption = 'Show Item In Coffee MR App';
                 }
                 field(picture; NameValueBufferBlob."Value BLOB")
                 {

@@ -4,12 +4,12 @@ tableextension 70030 CoffeeItem extends Item
     {
         field(70030; ShowInCoffeeMRApp; Boolean)
         {
-            Caption = 'Show this item in Coffee MR App';
+            Caption = 'Show In Coffee MR App';
             DataClassification = CustomerContent;
         }
         field(70031; LongDescription; Text[500])
         {
-            Caption = 'long Description';
+            Caption = 'Long Description';
             DataClassification = CustomerContent;
         }
         field(70032; Model3D; Blob)

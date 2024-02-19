@@ -12,8 +12,9 @@ page 70030 "Coffee MR Sample"
             label(Description)
             {
                 Caption = 'This is a sample page to simplify the generation and management of demo data for the Coffee MR sample. To use the mixed reality model rendering, you have to upload a 3D model to the using the Business Central Item page.';
+                ApplicationArea = All;
             }
-            field(SampleAppDocumentation; CoffeeSampleDocFieldLabel)
+            field(SampleAppDocumentation; SampleAppDocumentationLabel)
             {
                 ApplicationArea = All;
                 ShowCaption = false;
@@ -23,7 +24,7 @@ page 70030 "Coffee MR Sample"
                     Hyperlink('https://github.com/microsoft/bcsamples-CoffeeMR/?tab=readme-ov-file#preview-business-central-samples---coffee-mr');
                 end;
             }
-            part(PowerAppItems; CoffeeItemsListPart)
+            part(CoffeeItemsList; CoffeeItemsListPart)
             {
                 Caption = 'Coffee MR Items';
             }
@@ -45,8 +46,8 @@ page 70030 "Coffee MR Sample"
         {
             action(GenerateTestData)
             {
-                ApplicationArea = All;
                 Caption = 'Generate sample Data';
+                ApplicationArea = All;
                 trigger OnAction()
                 var
                     myCodeUnit: Codeunit CoffeDemoDataGenerator;
@@ -57,8 +58,8 @@ page 70030 "Coffee MR Sample"
 
             action(Items)
             {
-                ApplicationArea = All;
                 Caption = 'Go to Items';
+                ApplicationArea = All;
                 trigger OnAction()
                 begin
                     // Navigate to the Items page
@@ -68,5 +69,5 @@ page 70030 "Coffee MR Sample"
         }
     }
     var
-        CoffeeSampleDocFieldLabel: Label 'Coffee MR Sample Documentation';
+        SampleAppDocumentationLabel: Label 'Coffee MR Sample Documentation';
 }

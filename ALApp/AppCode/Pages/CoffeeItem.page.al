@@ -24,7 +24,7 @@ pageextension 70033 CoffeeItem extends "Item Card"
                 ApplicationArea = All;
                 Editable = true;
             }
-            field(UploadModel3d; uploadModelLabel)
+            field(UploadModel3d; UploadModelLabel)
             {
                 ApplicationArea = All;
                 Caption = '3D model';
@@ -33,15 +33,15 @@ pageextension 70033 CoffeeItem extends "Item Card"
 
                 trigger OnDrillDown()
                 var
-                    model3DStream: InStream;
-                    model3DOutStream: OutStream;
-                    fromFile: Text;
+                    Model3DStream: InStream;
+                    Model3DOutStream: OutStream;
+                    FromFile: Text;
                 begin
-                    if UploadIntoStream('Upload 3D model', '', '', fromFile, model3DStream)
+                    if UploadIntoStream('Upload 3D model', '', '', FromFile, Model3DStream)
                     then begin
                         Clear(Rec.Model3D);
-                        Rec.Model3D.CreateOutStream(model3DOutStream);
-                        CopyStream(model3DOutStream, model3DStream);
+                        Rec.Model3D.CreateOutStream(Model3DOutStream);
+                        CopyStream(Model3DOutStream, Model3DStream);
                         Rec.Modify(true);
 
                         // Recalculate the label and don't save
@@ -60,11 +60,11 @@ pageextension 70033 CoffeeItem extends "Item Card"
     begin
         Rec.SetAutoCalcFields(Model3D);
 
-        uploadModelLabel := 'Upload';
+        UploadModelLabel := 'Upload';
         if Rec.Model3D.HasValue then
-            uploadModelLabel := 'Overwrite';
+            UploadModelLabel := 'Overwrite';
     end;
 
     var
-        uploadModelLabel: Text;
+        UploadModelLabel: Text;
 }

@@ -14,11 +14,11 @@ page 70031 CoffeeItemsListPart
                 {
                     ApplicationArea = All;
                 }
-                field(ItemName; Rec.Description)
+                field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
                 }
-                field(ItemPrice; Rec."Unit Price")
+                field(UnitPrice; Rec."Unit Price")
                 {
                     ApplicationArea = All;
                 }
