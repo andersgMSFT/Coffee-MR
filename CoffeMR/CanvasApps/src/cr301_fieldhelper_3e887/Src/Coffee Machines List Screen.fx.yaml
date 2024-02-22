@@ -21,7 +21,7 @@
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =Color.Transparent
             FillPortions: =0
-            Height: =If(ctxHasFilter, 140, 80)
+            Height: =If(ctxHasFilter, 150, varTheme.PageHeader)
             LayoutMinHeight: =112
             LayoutMinWidth: =250
             X: =40
@@ -31,24 +31,24 @@
             conCoffeeFilter As groupContainer:
                 Height: =80
                 Visible: =ctxHasFilter
-                Width: =430
-                X: =105
-                Y: =Parent.Height - Self.Height
+                Width: =550
+                X: =Parent.Width/2 - Self.Width/2
+                Y: =Parent.Height - Self.Height 
                 ZIndex: =1
 
                 btnFilter As button:
                     Align: =Align.Left
                     BorderColor: =Color.Wheat
                     BorderThickness: =0
-                    Color: =RGBA(0, 0, 0, 1)
+                    Color: =varTheme.TextGray
                     DisabledColor: =RGBA(0, 0, 0, 1)
                     Fill: =RGBA(255, 255, 255, 1)
                     Font: =varTheme.font
-                    Height: =50
+                    FontWeight: =FontWeight.Normal
+                    Height: =50  
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =Color.White
                     OnSelect: =Select(icnRemoveFilter)
-                    PaddingBottom: =0
                     PaddingLeft: =20
                     PaddingRight: =0
                     PaddingTop: =0
@@ -57,46 +57,47 @@
                     RadiusBottomRight: =30
                     RadiusTopLeft: =30
                     RadiusTopRight: =30
-                    Size: =14
+                    Size: =varTheme.FontSize1
                     Text: |-
                         ="Max dimensions h: " & ctxFilterHeight & " w: " & ctxFilterWidth & " d: " & ctxFilterDepth
-                    Width: =380
+                    Width: =Parent.Width
                     X: =Parent.Width/2 - Self.Width/2
-                    Y: =Parent.Height -Self.Height - 15
+                    Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =1
 
                 icnRemoveFilter As icon.CancelBadge:
-                    Color: =RGBA(0, 0, 0, 1)
+                    Color: =varTheme.TextGray
                     Height: =25
                     Icon: =Icon.CancelBadge
                     OnSelect: |-
                         =UpdateContext({ctxHasFilter: false})
                     Width: =25
-                    X: =365
-                    Y: =30
+                    X: =Parent.Width - 40
+                    Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =2
 
             lblCoffeeListHeader As label:
                 Align: =Align.Center
                 Color: =varTheme.TextDark
                 Font: =varTheme.font
-                Height: =80
-                Size: =30
+                Height: =varTheme.PageHeader
+                Size: =varTheme.FontSize4
                 Text: ="Select a machine"
-                Width: =640
+                Width: =Parent.Width
                 ZIndex: =2
 
-            icnCoffeeListHeaderBack As icon.ChevronLeft:
-                Color: =RGBA(0, 0, 0, 1)
-                Height: =80
-                Icon: =Icon.ChevronLeft
+            imgCoffeeMachineListBack As image:
+                Height: =90
+                Image: ='Coffee MR general top back arrow'
                 OnSelect: =Back(ScreenTransition.UnCoverRight)
-                PaddingBottom: =20
-                PaddingLeft: =20
-                PaddingRight: =20
-                PaddingTop: =20
-                Width: =80
-                ZIndex: =3
+                PaddingBottom: =varTheme.iconPadding
+                PaddingLeft: =varTheme.iconPadding
+                PaddingRight: =varTheme.iconPadding
+                PaddingTop: =varTheme.iconPadding
+                TabIndex: =0
+                Tooltip: ="Close page"
+                Width: =varTheme.iconSize
+                ZIndex: =4
 
         conCoffeeListContent As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -115,7 +116,7 @@
                             Filter(
                                 'coffeeItems (microsoft/powerApps/beta)',
                                 And(
-                                    showInCoffeeMRApp,
+                                    'Show Item In Coffee MR App',
                                     'Item Category Code' = "finishedGoods",
                                     'Item Height' < ctxFilterHeight,
                                     'Item Width' < ctxFilterWidth,
@@ -124,7 +125,7 @@
                             ),
                             Filter(
                                 'coffeeItems (microsoft/powerApps/beta)',
-                                And(showInCoffeeMRApp,'Item Category Code' = "finishedGoods")
+                                And('Show Item In Coffee MR App','Item Category Code' = "finishedGoods")
                             )
                         ),
                         "displayName",
@@ -147,15 +148,15 @@
                 ShowScrollbar: =false
                 TemplatePadding: =0
                 TemplateSize: =120
-                Width: =Parent.Width - 30
-                X: =Parent.Width/2 - Self.Width/2
+                Width: =Parent.Width - (Self.X * 2)
+                X: =30
                 Y: =10
                 ZIndex: =1
 
                 figCoffeeMachineSeperator As rectangle:
                     BorderColor: =RGBA(0, 0, 255, 1)
                     DisplayMode: =DisplayMode.Disabled
-                    Fill: =Color.LightGray
+                    Fill: =varTheme.SeperatorColor
                     Height: =2
                     OnSelect: =Select(Parent)
                     Width: =Parent.TemplateWidth
@@ -183,7 +184,7 @@
                                 ="<div style='
                                 height: " & Self.Height -25 & "px;   
                                 width: " & Self.Width - 25 & "px;   
-                                box-shadow: 1px 1px 1px 1px gray;
+                                box-shadow: 1px 1px 1px 1px #C0C0C0;
                                 margin: 10px;
                                 '></div>
                                 "
@@ -226,13 +227,11 @@
                         lblCoffeeMachinePrice As label:
                             Color: =varTheme.TextDark
                             Font: =varTheme.font
-                            Height: =35
                             OnSelect: =
                             PaddingBottom: =0
                             PaddingLeft: =0
                             PaddingRight: =0
-                            PaddingTop: =0
-                            Size: =21
+                            Size: =varTheme.FontSize3
                             Text: |
                                 =Text(ThisItem.unitPrice, varCurrencyFormat, varBcLocale)
                             VerticalAlign: =VerticalAlign.Top
@@ -247,7 +246,8 @@
                             PaddingBottom: =0
                             PaddingLeft: =0
                             PaddingRight: =0
-                            Size: =18
+                            PaddingTop: =0
+                            Size: =varTheme.FontSize3
                             Text: =ThisItem.displayName
                             VerticalAlign: =VerticalAlign.Top
                             Width: =371

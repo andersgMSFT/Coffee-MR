@@ -244,486 +244,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Debug screen'.Image1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Debug screen'.Image1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Debug screen",
-                "type": "'Debug screen'.Image1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Debug screen'.Image1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Debug screen'.Image1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Debug screen",
-                "type": "'Debug screen'.Image1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.icnDeleteSelection.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.icnDeleteSelection.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conTop.icnDeleteSelection"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.icnDeleteSelection.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.icnDeleteSelection.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conTop.icnDeleteSelection"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conTop.galItemGroups"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conTop.galItemGroups"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conMid.galItems"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conMid.galItems"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.figItemOverlay.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.figItemOverlay.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conMid.galItems.figItemOverlay"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.figItemOverlay.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.figItemOverlay.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conMid.galItems.figItemOverlay"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.icnAddItem.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.icnAddItem.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conMid.galItems.icnAddItem"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCAddItem.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCAddItem.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCAddItem"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.icnCoffeeListHeaderBack.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.icnCoffeeListHeaderBack.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Coffee Machines List Screen",
-                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.icnCoffeeListHeaderBack"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.icnCoffeeListHeaderBack.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.icnCoffeeListHeaderBack.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Coffee Machines List Screen",
-                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.icnCoffeeListHeaderBack"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.conCoffeeFilter.icnRemoveFilter.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.conCoffeeFilter.icnRemoveFilter.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Coffee Machines List Screen",
-                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.conCoffeeFilter.icnRemoveFilter"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.conCoffeeFilter.icnRemoveFilter.TabIndex"
                 }
               ],
@@ -737,306 +257,6 @@
                 "member": "TabIndex",
                 "module": "Coffee Machines List Screen",
                 "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.conCoffeeFilter.icnRemoveFilter"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Coffee Machines List Screen",
-                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Coffee Machines List Screen",
-                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Coffee Machines List Screen",
-                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Coffee Machines List Screen",
-                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListHeader.imgCustomerListHeaderClose.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListHeader.imgCustomerListHeaderClose.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Customer List Screen",
-                "type": "'Customer List Screen'.conCustomerList.conCustomerListHeader.imgCustomerListHeaderClose"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListHeader.imgCustomerListHeaderClose.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListHeader.imgCustomerListHeaderClose.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Customer List Screen",
-                "type": "'Customer List Screen'.conCustomerList.conCustomerListHeader.imgCustomerListHeaderClose"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Customer List Screen",
-                "type": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Customer List Screen",
-                "type": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Summary Screen'.conOrderSummaryHeader.icnBack.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Summary Screen'.conOrderSummaryHeader.icnBack.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Summary Screen",
-                "type": "'Summary Screen'.conOrderSummaryHeader.icnBack"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Summary Screen'.conOrderSummaryHeader.icnBack.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Summary Screen'.conOrderSummaryHeader.icnBack.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Summary Screen",
-                "type": "'Summary Screen'.conOrderSummaryHeader.icnBack"
               }
             }
           ],
@@ -1654,19 +874,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Coffee Machine screen'.conCoffeeMachine.conCoffeeHeader.icnBackToCoffeeMachineList.AccessibleLabel"
+                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListHeader.imgCloseCustomerPage.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Coffee Machine screen'.conCoffeeMachine.conCoffeeHeader.icnBackToCoffeeMachineList.AccessibleLabel",
+                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListHeader.imgCloseCustomerPage.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Coffee Machine screen",
-                "type": "'Coffee Machine screen'.conCoffeeMachine.conCoffeeHeader.icnBackToCoffeeMachineList"
+                "module": "Customer List Screen",
+                "type": "'Customer List Screen'.conCustomerList.conCustomerListHeader.imgCloseCustomerPage"
               }
             }
           ],
@@ -1684,49 +904,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Coffee Machine screen'.conCoffeeMachine.conCoffeeHeader.icnBackToCoffeeMachineList.TabIndex"
+                  "fullyQualifiedName": "'Info Screen'.imgCloseInfoPage.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Coffee Machine screen'.conCoffeeMachine.conCoffeeHeader.icnBackToCoffeeMachineList.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Coffee Machine screen",
-                "type": "'Coffee Machine screen'.conCoffeeMachine.conCoffeeHeader.icnBackToCoffeeMachineList"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Info Screen'.icnCloseInfoPage.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Info Screen'.icnCloseInfoPage.AccessibleLabel",
+                  "fullyQualifiedName": "'Info Screen'.imgCloseInfoPage.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Info Screen",
-                "type": "'Info Screen'.icnCloseInfoPage"
+                "type": "'Info Screen'.imgCloseInfoPage"
               }
             }
           ],
@@ -1744,49 +934,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Info Screen'.icnCloseInfoPage.TabIndex"
+                  "fullyQualifiedName": "'Start Screen'.imgLearnMore.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Info Screen'.icnCloseInfoPage.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Info Screen",
-                "type": "'Info Screen'.icnCloseInfoPage"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Start Screen'.icnLearnMore.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Start Screen'.icnLearnMore.AccessibleLabel",
+                  "fullyQualifiedName": "'Start Screen'.imgLearnMore.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Start Screen",
-                "type": "'Start Screen'.icnLearnMore"
+                "type": "'Start Screen'.imgLearnMore"
               }
             }
           ],
@@ -1804,19 +964,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Start Screen'.icnLearnMore.TabIndex"
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.conCoffeeFilter.icnRemoveFilter.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Start Screen'.icnLearnMore.TabIndex",
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.conCoffeeFilter.icnRemoveFilter.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "Start Screen",
-                "type": "'Start Screen'.icnLearnMore"
+                "member": "AccessibleLabel",
+                "module": "Coffee Machines List Screen",
+                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.conCoffeeFilter.icnRemoveFilter"
               }
             }
           ],
@@ -1826,27 +986,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Measurement Screen'.conMeasurementContent.conMeasurementHeader.icnBackToCustomerList.AccessibleLabel"
+                  "fullyQualifiedName": "'Measurement Screen'.conMeasurementContent.conMeasurementHeader.imgSelectCustomer_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Measurement Screen'.conMeasurementContent.conMeasurementHeader.icnBackToCustomerList.AccessibleLabel",
+                  "fullyQualifiedName": "'Measurement Screen'.conMeasurementContent.conMeasurementHeader.imgSelectCustomer_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Measurement Screen",
-                "type": "'Measurement Screen'.conMeasurementContent.conMeasurementHeader.icnBackToCustomerList"
+                "type": "'Measurement Screen'.conMeasurementContent.conMeasurementHeader.imgSelectCustomer_1"
               }
             }
           ],
@@ -1858,36 +1018,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Measurement Screen'.conMeasurementContent.conMeasurementHeader.icnBackToCustomerList.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Measurement Screen'.conMeasurementContent.conMeasurementHeader.icnBackToCustomerList.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Measurement Screen",
-                "type": "'Measurement Screen'.conMeasurementContent.conMeasurementHeader.icnBackToCustomerList"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2044,19 +1174,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Debug screen'.ctxShowCapturedImage"
+                  "fullyQualifiedName": "'Debug screen'.Image1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Debug screen'.ctxShowCapturedImage",
+                  "fullyQualifiedName": "'Debug screen'.Image1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ctxShowCapturedImage",
+                "member": "AccessibleLabel",
                 "module": "Debug screen",
-                "type": "'Debug screen'"
+                "type": "'Debug screen'.Image1_1"
               }
             }
           ],
@@ -2066,7 +1196,667 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Debug screen'.Image1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Debug screen'.Image1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Debug screen",
+                "type": "'Debug screen'.Image1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.imgRelatedProductsBack.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.imgRelatedProductsBack.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conTop.imgRelatedProductsBack"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conTop.galItemGroups"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conTop.galItemGroups"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conMid.galItems"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conMid.galItems"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.figItemOverlay.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.figItemOverlay.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conMid.galItems.figItemOverlay"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.figItemOverlay.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.figItemOverlay.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conMid.galItems.figItemOverlay"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.icnAddItem.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.icnAddItem.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conMid.galItems.icnAddItem"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCRemoveItem"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCAddItem.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCAddItem.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conMid.galItems.conQuantityControl.icnQCAddItem"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Coffee Machine screen'.conCoffeeMachine.conCoffeeHeader.imgCoffeeMachineBack.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Coffee Machine screen'.conCoffeeMachine.conCoffeeHeader.imgCoffeeMachineBack.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Coffee Machine screen",
+                "type": "'Coffee Machine screen'.conCoffeeMachine.conCoffeeHeader.imgCoffeeMachineBack"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.imgCoffeeMachineListBack.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.imgCoffeeMachineListBack.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Coffee Machines List Screen",
+                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListHeader.imgCoffeeMachineListBack"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers.conCustomerContent.imgSelectCustomer.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers.conCustomerContent.imgSelectCustomer.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Customer List Screen",
+                "type": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers.conCustomerContent.imgSelectCustomer"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Summary Screen'.conOrderSummaryHeader.ImgSummaryBack.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Summary Screen'.conOrderSummaryHeader.ImgSummaryBack.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Summary Screen",
+                "type": "'Summary Screen'.conOrderSummaryHeader.ImgSummaryBack"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Coffee Machines List Screen",
+                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Coffee Machines List Screen",
+                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Coffee Machines List Screen",
+                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Coffee Machines List Screen",
+                "type": "'Coffee Machines List Screen'.conCoffeeList.conCoffeeListContent.galCoffeeMachine.figCoffeeMachineOverlay"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Customer List Screen",
+                "type": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Customer List Screen",
+                "type": "'Customer List Screen'.conCustomerList.conCustomerListContent.galCustomers"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Coffee MR  count panel substract icon"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Coffee MR  count panel substract icon",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Coffee MR  count panel substract icon",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 6
         },
         {
@@ -2074,19 +1864,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterDepth"
+                  "fullyQualifiedName": "App.Coffee MR count panel add icon"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterDepth",
+                  "fullyQualifiedName": "App.Coffee MR count panel add icon",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ctxFilterDepth",
-                "module": "Customer List Screen",
-                "type": "'Customer List Screen'"
+                "member": "Coffee MR count panel add icon",
+                "module": "App",
+                "type": "App"
               }
             }
           ],
@@ -2096,7 +1886,7 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
+          "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 6
         },
         {
@@ -2104,19 +1894,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterHeight"
+                  "fullyQualifiedName": "App.Coffee MR customerlist top back arrow"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterHeight",
+                  "fullyQualifiedName": "App.Coffee MR customerlist top back arrow",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ctxFilterHeight",
-                "module": "Customer List Screen",
-                "type": "'Customer List Screen'"
+                "member": "Coffee MR customerlist top back arrow",
+                "module": "App",
+                "type": "App"
               }
             }
           ],
@@ -2126,7 +1916,7 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
+          "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 6
         },
         {
@@ -2134,19 +1924,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterWidth"
+                  "fullyQualifiedName": "App.Coffee MR succes icon"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterWidth",
+                  "fullyQualifiedName": "App.Coffee MR succes icon",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ctxFilterWidth",
-                "module": "Customer List Screen",
-                "type": "'Customer List Screen'"
+                "member": "Coffee MR succes icon",
+                "module": "App",
+                "type": "App"
               }
             }
           ],
@@ -2156,7 +1946,7 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
+          "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 6
         },
         {
@@ -2164,19 +1954,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Customer List Screen'.ctxShowFilter"
+                  "fullyQualifiedName": "App.Coffee MR top measurement dismiss icon"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Customer List Screen'.ctxShowFilter",
+                  "fullyQualifiedName": "App.Coffee MR top measurement dismiss icon",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "ctxShowFilter",
-                "module": "Customer List Screen",
-                "type": "'Customer List Screen'"
+                "member": "Coffee MR top measurement dismiss icon",
+                "module": "App",
+                "type": "App"
               }
             }
           ],
@@ -2186,7 +1976,7 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
+          "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 6
         },
         {
@@ -2217,7 +2007,157 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 6
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Debug screen'.ctxShowCapturedImage"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Debug screen'.ctxShowCapturedImage",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ctxShowCapturedImage",
+                "module": "Debug screen",
+                "type": "'Debug screen'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterDepth"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterDepth",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ctxFilterDepth",
+                "module": "Customer List Screen",
+                "type": "'Customer List Screen'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterHeight"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterHeight",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ctxFilterHeight",
+                "module": "Customer List Screen",
+                "type": "'Customer List Screen'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterWidth"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Customer List Screen'.ctxFilterWidth",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ctxFilterWidth",
+                "module": "Customer List Screen",
+                "type": "'Customer List Screen'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Customer List Screen'.ctxShowFilter"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Customer List Screen'.ctxShowFilter",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ctxShowFilter",
+                "module": "Customer List Screen",
+                "type": "'Customer List Screen'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
         }
       ],
       "tool": {
@@ -2325,6 +2265,23 @@
               }
             },
             {
+              "id": "app-UnusedMediaResources",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused media files"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused media file in the Media pane."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
+              }
+            },
+            {
               "id": "app-UnusedVariables",
               "messageStrings": {
                 "issue": {
@@ -2342,7 +2299,7 @@
               }
             }
           ],
-          "version": "1.336"
+          "version": "1.337"
         }
       }
     }

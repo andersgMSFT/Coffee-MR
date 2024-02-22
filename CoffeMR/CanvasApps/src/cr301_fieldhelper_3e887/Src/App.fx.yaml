@@ -11,7 +11,20 @@ App As appinfo:
             AppTealLight: ColorValue("#D7FBF9"),
             AppTeal: ColorValue("#0E7E86"),
             TextDark: ColorValue("#212121"),
-            TextLight: ColorValue("#FFFFFF")
+            TextGray: ColorValue("#757575"),
+            TextLight: ColorValue("#FFFFFF"),
+            SeperatorColor: ColorFade(ColorValue("#615B4C"), 50%),
+            ButtonSizeBig: 360,
+            ButtonSizeSNormal: 250,
+            ButtonHeight: 70,
+            FontSize1: 22,
+            FontSize2: 26,
+            FontSize3: 26,
+            FontSize4: 30,
+            PageContentMargin: 30,
+            PageHeader: 90,
+            iconSize: 100,
+            iconPadding: 20
         });
         Set(varCurrencyFormat, "$#,##0.00");
         Set(varBcLocale, "en-us");
