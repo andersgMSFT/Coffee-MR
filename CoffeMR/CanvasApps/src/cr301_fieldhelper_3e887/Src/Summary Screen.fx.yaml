@@ -18,14 +18,15 @@
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =123
-        Width: =Parent.Width
-        Y: =conOrderSummaryHeader.Height
+        Width: =Parent.Width - (Self.X*2)
+        X: =30
+        Y: =conOrderSummaryHeader.Height - 15
         ZIndex: =1
 
         conTotal As groupContainer:
-            Height: =123
+            Height: =135
             Visible: =ThisItem.total
-            Width: =640
+            Width: =Parent.Width
             ZIndex: =1
 
             lblTotalOrder As label:
@@ -36,7 +37,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =25
+                Size: =varTheme.FontSize4
                 Text: |-
                     ="Total:"
                 VerticalAlign: =VerticalAlign.Top
@@ -55,7 +56,7 @@
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =30
+                Size: =varTheme.FontSize4
                 Text: =Text(Sum(colSelectedItems, price * quantity), varCurrencyFormat ,varBcLocale)
                 VerticalAlign: =VerticalAlign.Top
                 Visible: =ThisItem.total
@@ -76,8 +77,7 @@
                 Fill: =RGBA(166, 166, 166, 1)
                 Height: =2
                 OnSelect: =
-                Width: =Parent.Width - 40
-                X: =20
+                Width: =Parent.Width 
                 Y: =Parent.Height - Self.Height
                 ZIndex: =1
 
@@ -87,7 +87,7 @@
                 Font: =varTheme.font
                 Height: =Parent.Height
                 OnSelect: =
-                Size: =25
+                Size: =varTheme.FontSize3
                 Text: |-
                     =With({
                             groupCost: Sum(Filter(colSelectedItems, group = ThisItem.name), price * quantity)
@@ -104,7 +104,7 @@
                 Font: =varTheme.font
                 Height: =70
                 OnSelect: =
-                Size: =25
+                Size: =varTheme.FontSize3
                 Text: |-
                     =With({
                         groupSum: Sum(Filter(colSelectedItems, group = ThisItem.name), quantity)}
@@ -126,8 +126,8 @@
                         Icon.ChevronUp    
                     )
                 Width: =30
-                X: =20
-                Y: =Parent.Height/2 - Self.Height/2 + 4
+                X: =10
+                Y: =Parent.Height/2 - Self.Height/2 
                 ZIndex: =5
 
             recOverLay As rectangle:
@@ -154,8 +154,7 @@
                         isGroupCollapsed
                     )
                 )
-            Width: =Parent.TemplateWidth - 40
-            X: =20
+            Width: =Parent.TemplateWidth 
             ZIndex: =3
 
             figItemSeparatorOrderSummary As rectangle:
@@ -192,12 +191,11 @@
                     Color: =varTheme.TextDark
                     DisplayMode: =    DisplayMode.Edit
                     Font: =varTheme.font
-                    Height: =35
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =20
+                    Size: =varTheme.FontSize3
                     Text: =Text(ThisItem.price, varCurrencyFormat, varBcLocale)
                     VerticalAlign: =VerticalAlign.Top
                     Visible: =Not(IsBlank(ThisItem.quantity))
@@ -208,12 +206,11 @@
                 lblItemSummaryDisplayName As label:
                     Color: =varTheme.TextDark
                     Font: =varTheme.font
-                    Height: =35
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
                     PaddingTop: =0
-                    Size: =22
+                    Size: =varTheme.FontSize3
                     Text: =ThisItem.name
                     VerticalAlign: =VerticalAlign.Top
                     Visible: =Not(IsBlank(ThisItem.quantity))
@@ -255,8 +252,8 @@
                 Text: =LookUp(colSelectedItems, id = ThisItem.id).quantity
                 Visible: =Not(IsBlank(ThisItem.quantity))
                 Width: =68
-                X: =525
-                Y: =35
+                X: =Parent.Width - Self.Width
+                Y: =Parent.Height/2 - Self.Height/2
                 ZIndex: =5
 
             conQuantityControlOrderSummary As groupContainer.manualLayoutContainer:
@@ -432,7 +429,7 @@
         DisplayMode: =If(Sum(colSelectedItems, quantity), DisplayMode.Edit, DisplayMode.Disabled)
         Fill: =varTheme.AppTeal
         Font: =varTheme.font
-        Height: =80
+        Height: =varTheme.ButtonHeight
         HoverFill: =ColorFade(Self.Fill, -20%)
         OnSelect: |-
             =UpdateContext({ctxShowLoadingScreen: true, ctxError: false});
@@ -458,15 +455,16 @@
             
             ClearCollect(colSelectedItems, Blank());
             Navigate('Success Screen', ScreenTransition.Fade);
+        PaddingTop: =0
         RadiusBottomLeft: =40
         RadiusBottomRight: =40
         RadiusTopLeft: =40
         RadiusTopRight: =40
-        Size: =22
+        Size: =varTheme.FontSize1
         Text: ="Submit"
-        Width: =300
+        Width: =varTheme.ButtonSizeSNormal
         X: =Parent.Width/2 - Self.Width/2
-        Y: =Parent.Height - Self.Height - 40
+        Y: =comBigDividerBottomSummary.Y + comBigDividerBottomSummary.Height - Self.Height/2 
         ZIndex: =3
 
     conOrderSummaryHeader As groupContainer:
@@ -474,49 +472,45 @@
         Width: =Parent.Width
         ZIndex: =4
 
+        comBigDividerSummeryTop As comBigDivider:
+            Height: =16
+            Width: =Parent.Width
+            Y: =varTheme.PageHeader
+
         lblCurrentOrderNumber As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =varTheme.TextDark
             Font: =varTheme.font
             Height: =60
-            Size: =34
+            Size: =varTheme.FontSize4
             Text: ="Order "
             Width: =560
             X: =40
             Y: =110
-            ZIndex: =1
+            ZIndex: =2
 
         lblCurrentOrderTable As label:
             Align: =Align.Center
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =varTheme.TextDark
             Font: =varTheme.font
-            Height: =50
-            Size: =30
+            Height: =varTheme.PageHeader
+            Size: =varTheme.FontSize4
             Text: ="Order Summary"
-            Width: =335
-            X: =152
-            Y: =25
-            ZIndex: =2
-
-        icnBack As icon.ChevronLeft:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            Height: =90
-            Icon: =Icon.ChevronLeft
-            OnSelect: =Back(ScreenTransition.UnCoverRight);
-            PaddingBottom: =30
-            PaddingLeft: =30
-            PaddingRight: =30
-            PaddingTop: =30
-            Width: =90
-            Y: =5
+            Width: =Parent.Width
             ZIndex: =3
 
-        comBigDividerSummeryTop As comBigDivider:
-            Height: =16
-            Width: =Parent.Width
-            Y: =100
+        ImgSummaryBack As image:
+            Height: =90
+            Image: ='Coffee MR general top back arrow'
+            OnSelect: =Back(ScreenTransition.UnCoverRight)
+            PaddingBottom: =varTheme.iconPadding
+            PaddingLeft: =varTheme.iconPadding
+            PaddingRight: =varTheme.iconPadding
+            PaddingTop: =varTheme.iconPadding
+            TabIndex: =0
+            Tooltip: ="Close page"
+            Width: =varTheme.iconSize
             ZIndex: =5
 
     comYesNoDialogCheckout As comYesNoDialog:

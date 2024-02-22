@@ -20,7 +20,7 @@
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =Color.Transparent
             FillPortions: =0
-            Height: =80
+            Height: =varTheme.PageHeader
             LayoutMinHeight: =112
             LayoutMinWidth: =250
             X: =40
@@ -31,23 +31,25 @@
                 Align: =Align.Center
                 Color: =varTheme.TextLight
                 Font: =varTheme.font
-                Height: =80
-                Size: =26
+                Height: =varTheme.PageHeader
+                Size: =varTheme.FontSize4
                 Text: ="Who is buying?"
-                Width: =640
+                Width: =Parent.Width
                 ZIndex: =2
 
-            imgCustomerListHeaderClose As image:
-                Height: =80
+            imgCloseCustomerPage As image:
+                Height: =90
                 Image: ='Coffee MR customerlist dismiss icon'
                 OnSelect: =Back(ScreenTransition.UnCoverRight)
-                PaddingBottom: =20
-                PaddingLeft: =20
-                PaddingRight: =20
-                PaddingTop: =20
-                Width: =80
+                PaddingBottom: =varTheme.iconPadding
+                PaddingLeft: =varTheme.iconPadding
+                PaddingRight: =varTheme.iconPadding
+                PaddingTop: =varTheme.iconPadding
+                TabIndex: =0
+                Tooltip: ="Close page"
+                Width: =varTheme.iconSize
                 X: =Parent.Width - Self.Width
-                ZIndex: =4
+                ZIndex: =5
 
         conCustomerListContent As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
@@ -120,7 +122,7 @@
                             LayoutMinHeight: =70
                             LayoutMinWidth: =560
                             OnSelect: =
-                            Size: =21
+                            Size: =varTheme.FontSize3
                             Text: =ThisItem.'Display Name'
                             Width: =Parent.Width
                             X: =40
@@ -132,19 +134,27 @@
                             LayoutMinHeight: =70
                             LayoutMinWidth: =560
                             OnSelect: =
-                            Size: =21
+                            PaddingTop: =15
+                            Size: =varTheme.FontSize3
                             Text: =ThisItem.'No.'
                             Width: =Parent.Width
                             X: =40
                             ZIndex: =2
 
-                    icnSelectCustomer As icon.ChevronRight:
-                        Color: =varTheme.TextLight
+                    imgSelectCustomer As image:
                         Height: =Parent.Height
-                        Icon: =Icon.ChevronRight
-                        PaddingBottom: =55
-                        PaddingTop: =55
-                        ZIndex: =3
+                        Image: ='Coffee MR customerlist select icon'
+                        LayoutMinHeight: =320
+                        LayoutMinWidth: =320
+                        OnSelect: =Back(ScreenTransition.UnCoverRight)
+                        PaddingBottom: =Self.PaddingTop
+                        PaddingLeft: =varTheme.iconPadding
+                        PaddingRight: =varTheme.iconPadding
+                        PaddingTop: =45
+                        TabIndex: =0
+                        Tooltip: ="Close page"
+                        Width: =varTheme.iconSize
+                        ZIndex: =4
 
                 btnCustomerOverlay As button:
                     Fill: =RGBA(0, 0, 0, 0)

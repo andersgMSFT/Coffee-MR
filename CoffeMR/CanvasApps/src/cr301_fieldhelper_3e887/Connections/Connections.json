@@ -7,7 +7,7 @@
     "connectionRef": {
       "apiTier": "Premium",
       "displayName": "Dynamics 365 Business Central",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1673/1.0.1673.3557/dynamicssmbsaas/icon.png",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1677/1.0.1677.3631/dynamicssmbsaas/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas",
       "parameterHints": {},
       "parameterHintsV2": {}
@@ -59,7 +59,7 @@
           "value": "aba81736-12d9-ed11-a7c7-000d3a991110"
         },
         "workflowName": {
-          "value": "17b60185-368a-46ef-9cd8-82daa80780e8"
+          "value": "e6d4b0e2-4e50-44bc-a567-be8d48eac5ed"
         }
       },
       "parameterHintsV2": {
@@ -70,7 +70,7 @@
           "value": "aba81736-12d9-ed11-a7c7-000d3a991110"
         },
         "workflowName": {
-          "value": "17b60185-368a-46ef-9cd8-82daa80780e8"
+          "value": "e6d4b0e2-4e50-44bc-a567-be8d48eac5ed"
         }
       }
     },

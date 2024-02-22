@@ -11,7 +11,7 @@ comLoadingOverlay As CanvasComponent:
         Color: =
         Font: =Font.'Segoe UI'
         Height: =70
-        Size: =21
+        Size: =26
         Text: ="Creating Sales Order"
         Width: =Parent.Width
         Y: =imgLoadingSpinner.Y + imgLoadingSpinner.Height
