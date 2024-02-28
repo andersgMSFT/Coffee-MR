@@ -764,36 +764,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Measurement Screen'.conMeasurementContent.conMeasurementHeader.imgSelectCustomer_1.AccessibleLabel"
                 }
               ],
@@ -1047,6 +1017,66 @@
                 "member": "TabIndex",
                 "module": "Extras List Screen",
                 "type": "'Extras List Screen'.conTop.galItemGroups"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline"
               }
             }
           ],
@@ -1574,36 +1604,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.varMeasurement"
                 }
               ],
@@ -1628,6 +1628,36 @@
           },
           "ruleId": "app-UnusedVariables",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Coffee MR_app icon_245x245"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Coffee MR_app icon_245x245",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Coffee MR_app icon_245x245",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1748,6 +1778,23 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
+              }
+            },
+            {
+              "id": "app-UnusedMediaResources",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused media files"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused media file in the Media pane."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This media file is not referenced by any control formulas so it is not needed. Removing it will improve performance."
               }
             }
           ],
