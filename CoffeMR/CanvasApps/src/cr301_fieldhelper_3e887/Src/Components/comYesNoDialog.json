@@ -2203,7 +2203,7 @@
       "behaviorNo",
       "PrimaryColor"
     ],
-    "LastModifiedTimestamp": "638446976916354956",
+    "LastModifiedTimestamp": "638447104223771493",
     "Name": "comYesNoDialog",
     "Rules": [
       {
@@ -2324,7 +2324,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638446976916354956",
+  "LastModifiedTimestamp": "638447104223771493",
   "Name": "3c030ee18d5d4acdb0591f7d2f3b76c5",
   "OverridableProperties": {},
   "TemplateOriginalName": "01906efe1f6b4ac885f5f6ea0fc7bf76",
