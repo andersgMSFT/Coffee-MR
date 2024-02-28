@@ -764,36 +764,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Measurement Screen'.conMeasurementContent.conMeasurementHeader.imgSelectCustomer_1.AccessibleLabel"
                 }
               ],
@@ -1047,6 +1017,66 @@
                 "member": "TabIndex",
                 "module": "Extras List Screen",
                 "type": "'Extras List Screen'.conTop.galItemGroups"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline"
               }
             }
           ],
@@ -1568,36 +1598,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Extras List Screen",
-                "type": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.recItemGroupUnderline"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 0
         },
         {
           "locations": [
