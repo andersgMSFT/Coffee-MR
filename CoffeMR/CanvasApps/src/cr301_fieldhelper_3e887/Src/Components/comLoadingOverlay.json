@@ -102,7 +102,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "comLoadingOverlay",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 181,
+        "PublishOrderIndex": 176,
         "Rules": [
           {
             "Category": "Data",
@@ -415,7 +415,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "comLoadingOverlay",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 182,
+        "PublishOrderIndex": 177,
         "Rules": [
           {
             "Category": "Data",
@@ -698,7 +698,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638442080854158591",
+    "LastModifiedTimestamp": "638446976916348145",
     "Name": "comLoadingOverlay",
     "Rules": [
       {
@@ -757,7 +757,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638442080854158591",
+  "LastModifiedTimestamp": "638446976916348145",
   "Name": "915e100f11f94a0788a92a9b222034eb",
   "OverridableProperties": {},
   "TemplateOriginalName": "b3dd31404fa9463fbc93ea675e93165d",

@@ -10,13 +10,14 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        icnSuccess As icon.Check:
-            Color: =varTheme.AppTeal
-            Height: =Self.Width
-            Icon: =Icon.Check
-            Width: =Parent.Width * 0.3
-            Y: =40
-            ZIndex: =1
+        imgSuccess As image:
+            FillPortions: =1
+            Height: =320
+            Image: ='Coffee MR succes icon'
+            LayoutMinHeight: =320
+            LayoutMinWidth: =320
+            Width: =320
+            ZIndex: =2
 
     timeSuccess As timer:
         AutoStart: =true
