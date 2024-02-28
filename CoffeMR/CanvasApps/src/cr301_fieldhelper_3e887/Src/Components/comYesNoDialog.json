@@ -73,7 +73,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "comYesNoDialog",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 174,
+        "PublishOrderIndex": 169,
         "Rules": [
           {
             "Category": "Design",
@@ -289,7 +289,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "conDialog",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 176,
+            "PublishOrderIndex": 171,
             "Rules": [
               {
                 "Category": "Data",
@@ -624,7 +624,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "conDialog",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 177,
+            "PublishOrderIndex": 172,
             "Rules": [
               {
                 "Category": "Data",
@@ -1062,7 +1062,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "conButtons",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 179,
+                "PublishOrderIndex": 174,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1478,7 +1478,7 @@
                 "OptimizeForDevices": "Off",
                 "Parent": "conButtons",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 180,
+                "PublishOrderIndex": 175,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1808,7 +1808,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "conDialog",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 178,
+            "PublishOrderIndex": 173,
             "Rules": [
               {
                 "Category": "Design",
@@ -2030,7 +2030,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "comYesNoDialog",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 175,
+        "PublishOrderIndex": 170,
         "Rules": [
           {
             "Category": "Design",
@@ -2203,7 +2203,7 @@
       "behaviorNo",
       "PrimaryColor"
     ],
-    "LastModifiedTimestamp": "638442080854163639",
+    "LastModifiedTimestamp": "638446976916354956",
     "Name": "comYesNoDialog",
     "Rules": [
       {
@@ -2324,7 +2324,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638442080854163639",
+  "LastModifiedTimestamp": "638446976916354956",
   "Name": "3c030ee18d5d4acdb0591f7d2f3b76c5",
   "OverridableProperties": {},
   "TemplateOriginalName": "01906efe1f6b4ac885f5f6ea0fc7bf76",

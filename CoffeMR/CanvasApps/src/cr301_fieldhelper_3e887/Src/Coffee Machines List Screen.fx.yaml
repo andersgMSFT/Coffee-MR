@@ -48,7 +48,7 @@
                     Height: =50  
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =Color.White
-                    OnSelect: =Select(icnRemoveFilter)
+                    OnSelect: =Back(ScreenTransition.UnCoverRight)
                     PaddingLeft: =20
                     PaddingRight: =0
                     PaddingTop: =0
@@ -65,16 +65,21 @@
                     Y: =Parent.Height/2 - Self.Height/2
                     ZIndex: =1
 
-                icnRemoveFilter As icon.CancelBadge:
-                    Color: =varTheme.TextGray
-                    Height: =25
-                    Icon: =Icon.CancelBadge
+                imgRemoveFilter As image:
+                    Height: =50
+                    Image: ='Coffee MR top measurement dismiss icon'
                     OnSelect: |-
                         =UpdateContext({ctxHasFilter: false})
-                    Width: =25
-                    X: =Parent.Width - 40
+                    PaddingBottom: =10
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    PaddingTop: =10
+                    TabIndex: =0
+                    Tooltip: ="Remove filter"
+                    Width: =50
+                    X: =Parent.Width - Self.Width
                     Y: =Parent.Height/2 - Self.Height/2
-                    ZIndex: =2
+                    ZIndex: =3
 
             lblCoffeeListHeader As label:
                 Align: =Align.Center
@@ -175,7 +180,7 @@
                         Height: =225
                         LayoutMinHeight: =80
                         LayoutMinWidth: =250
-                        Width: =120
+                        Width: =105
                         ZIndex: =1
 
                         htmlCoffeeMachineImageShadow As htmlViewer:
@@ -216,6 +221,8 @@
                             RadiusTopLeft: =5
                             RadiusTopRight: =5
                             Width: =80
+                            X: =2
+                            Y: =Parent.Height/2 - Self.Height/2
                             ZIndex: =2
 
                     conCoffeeMachineTexts As groupContainer.manualLayoutContainer:
@@ -236,7 +243,7 @@
                                 =Text(ThisItem.unitPrice, varCurrencyFormat, varBcLocale)
                             VerticalAlign: =VerticalAlign.Top
                             Width: =300
-                            Y: =imgCoffeeMachineImage.Y + imgCoffeeMachineImage.Height - Self.Height
+                            Y: =imgCoffeeMachineImage.Height - Self.Height
                             ZIndex: =1
 
                         lblCoffeeMachineDisplayName As label:
@@ -251,7 +258,7 @@
                             Text: =ThisItem.displayName
                             VerticalAlign: =VerticalAlign.Top
                             Width: =371
-                            Y: =imgCoffeeMachineImage.Y
+                            Y: =0   
                             ZIndex: =2
 
                     icnSelectCoffeeMachine As icon.ChevronRight:
@@ -259,6 +266,7 @@
                         Height: =Parent.Height
                         Icon: =Icon.ChevronRight
                         PaddingBottom: =30
+                        PaddingLeft: =Self.Width/2
                         PaddingTop: =30
                         ZIndex: =3
 

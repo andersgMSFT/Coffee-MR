@@ -12,7 +12,7 @@
         );
 
     conMeasurementContent As groupContainer.verticalAutoLayoutContainer:
-        Height: =Parent.Height - 40
+        Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Center
         LayoutDirection: =LayoutDirection.Vertical
         LayoutGap: =5
@@ -53,10 +53,10 @@
 
         imgMeasurements As image:
             BorderColor: =RGBA(237, 237, 237, 1)
-            Height: =Self.Width
+            Height: =600
             Image: ='Coffee MR_Dimensions illustration_X2'
-            ImagePosition: =ImagePosition.Fill
-            Width: =Parent.Width - 44
+            PaddingLeft: =Self.PaddingRight
+            Width: =Parent.Width - 100
             ZIndex: =2
 
         "galMeasurements As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
@@ -175,7 +175,7 @@
                 RadiusTopLeft: =80
                 RadiusTopRight: =80
                 Size: =varTheme.FontSize1
-                Text: ="Filter Products"
+                Text: ="Filter products"
                 Width: =varTheme.ButtonSizeSNormal
                 X: =Parent.Width/2 - Self.Width/2
                 Y: =Parent.Height/2 - Self.Height/2 + 10
@@ -200,10 +200,10 @@
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMode: =LayoutMode.Auto
-            RadiusBottomLeft: =30
-            RadiusBottomRight: =30
-            RadiusTopLeft: =30
-            RadiusTopRight: =30
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
             X: =Parent.Width/2 - Self.Width/2
             Y: =Parent.Height/2 - Self.Height/2
             ZIndex: =7

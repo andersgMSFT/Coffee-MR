@@ -48,7 +48,7 @@
             LayoutMinWidth: =560
             LineHeight: =1.4
             Size: =varTheme.FontSize3
-            Text: ="This sample Power App connects to Business Central and showcases how mixed reality (MR) can be leveraged to optimize the sales  process"
+            Text: ="This sample Power App connects to Business Central and showcases how mixed reality (MR) can be leveraged to optimize the sales process"
             Width: =Parent.Width
             X: =Parent.Width/2 - Self.Width/2
             ZIndex: =2

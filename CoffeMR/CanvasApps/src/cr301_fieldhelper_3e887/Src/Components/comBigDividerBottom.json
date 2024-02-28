@@ -113,7 +113,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "comBigDividerBottom",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 173,
+        "PublishOrderIndex": 168,
         "Rules": [
           {
             "Category": "Data",
@@ -268,7 +268,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638442080854161963",
+    "LastModifiedTimestamp": "638446976916353124",
     "Name": "comBigDividerBottom",
     "Rules": [
       {
@@ -327,7 +327,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638442080854161963",
+  "LastModifiedTimestamp": "638446976916353124",
   "Name": "6fb90aa8ffd54e19b18c457ebdeb2dc1",
   "OverridableProperties": {},
   "TemplateOriginalName": "994ada8841c046348956657475c63a7b",

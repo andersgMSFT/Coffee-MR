@@ -87,6 +87,7 @@
       "rtlsupport": false,
       "showclassicthemes": false,
       "smartemaildatacard": false,
+      "sqlstoredprocedureenabled": false,
       "supportcolumnnamesasidentifiers": false,
       "tabledoesntwraprecords": true,
       "usedisplaynamemetadata": true,
@@ -100,7 +101,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 5,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -137,13 +138,11 @@
     "Start Screen",
     "Info Screen",
     "Customer List Screen",
-    "Start Measure Screen",
     "Measurement Screen",
     "Coffee Machines List Screen",
     "Coffee Machine screen",
     "Extras List Screen",
     "Summary Screen",
-    "Success Screen",
-    "Debug screen"
+    "Success Screen"
   ]
 }
