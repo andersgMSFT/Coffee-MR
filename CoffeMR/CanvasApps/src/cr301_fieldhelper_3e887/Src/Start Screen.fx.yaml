@@ -28,7 +28,7 @@
             LayoutDirection: =LayoutDirection.Vertical
             LayoutGap: =50
             LayoutJustifyContent: =LayoutJustifyContent.Center
-            LayoutMinHeight: =112
+            LayoutMinHeight: =Parent.Height - 800
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             PaddingTop: =20

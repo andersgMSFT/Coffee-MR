@@ -23,7 +23,6 @@
     "btnCustomerOverlay": 193,
     "btnFilter": 162,
     "btnFunctionLoadOrderSummary": 29,
-    "btnItemGroup": 126,
     "btnLearnMore": 87,
     "btnMeasurementOverlay": 108,
     "btnMRMeasure": 194,
@@ -182,6 +181,7 @@
     "lblInfoHeader": 82,
     "lblInfoText": 84,
     "lblItemDisplayName": 135,
+    "lblItemGroup": 196,
     "lblItemPrice": 147,
     "lblItemSummaryDisplayName": 46,
     "lblItemSummaryPrice": 47,
@@ -215,7 +215,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/28/2024 10:27:29",
+  "HeaderLastSavedDateTimeUTC": "02/28/2024 15:04:57",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0ff5df45-9575-4f2b-8cac-8ae027644295": "\"/providers/microsoft.powerapps/apis/shared_dynamicssmbsaas/connections/624a8fbc28a14ff29f75d412ab08ac95\"",
@@ -239,20 +239,20 @@
     "placeholder": "c940736a-1400-4426-9ca0-082919baf7a1.png"
   },
   "LocalResourceRootPaths": {
-    "Coffee MR customer icon": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images03c3815d9-b67b-4b58-ac96-39ad0fe950e7.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=pnr09bevtOnRUcafosEtt0SeGG87LdHmejlkX8zyLo0%3D",
-    "Coffee MR customerlist dismiss icon": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images08b798777-ec50-4612-8fff-64aa9c09c704.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=0iOes1KUV6jYHhYl8xB3KnhJlIsSsK7VKnYmASZXvqQ%3D",
-    "Coffee MR customerlist select icon": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images034439065-9f94-42d4-ab76-5b7bd72040d1.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=OUFzJP4bS5nGce6q0IKxh6P%2BHfHZfGNci4I4EU6yc6w%3D",
-    "Coffee MR edit icon": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images088fa0b75-e761-41f1-b95e-5e73f5ac1f5d.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=aXBLLtr7B%2FG%2FW2kQPOj1VsaZNi0h7B1ySTVy9xltAxY%3D",
-    "Coffee MR general top back arrow": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images0bb887973-c9fa-4300-856a-2c60416d778c.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=RanxHfM9tCsDUGdP7Q5G6%2BNEYAB6Wo9xE34k5436plE%3D",
-    "Coffee MR info screen dismiss icon": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/b8953ed1-22c8-4568-85fc-5d47bab3716d.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A36Z&ske=2024-02-29T10%3A02%3A36Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A36Z&sr=b&sp=r&sig=x4L7VD6AVoR53NduMcz0u2%2BtLX9MnbyvlRiuO4RpGFE%3D",
-    "Coffee MR info screen info icon": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images0fbb1c9df-04d4-4ab1-be71-2072671a83d1.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=vSVYTC%2F7ZIRsWXrlumYjRgshJ7S%2Fm9splrFJvoPIBYQ%3D",
-    "Coffee MR start screen info icon": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images05245a325-56ad-4090-9b7d-19fe0d256bab.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=SjxsS94c9KjnzB3ZEWHC1E2Ydg1Pl8GGQq2kS4Dw45I%3D",
-    "Coffee MR succes icon": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images017a7b356-a3a5-4a54-852f-ce15075a724b.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=Sn9o4e5B2bxi34ZyBg6r9OFxEy3EMUb2IeBPlykkyOo%3D",
-    "Coffee MR top measurement dismiss icon": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images0c99256fe-a1f0-4ccb-b418-a0836f2eb2c7.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=KuYNioQXE%2B4wf9mBVyrzDS09FSU9WBQazDXSfIZyqU4%3D",
-    "Coffee MR_Dimensions illustration_X2": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images088bc3f07-882f-440d-9394-9fdacafd1ab1.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=pb2nJCGGhcmAg0%2Bs1LkFpHdPS7Etf8KSr3tNAfIatUI%3D",
-    "Coffee MR_logotype and logo_x2": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images0a33a4fcb-fc20-4e37-862d-e83f7b9acab1.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=e1c35YwNc8yUbiQHd%2FklSADl1GVMK3IQR0dKDPsfbCc%3D",
-    "Coffee-MR_spinner_light-aqua_X2": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images0667aaf2c-3750-45c9-9188-f6f47248f2cd.gif?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=ATKNEB5b7G2B2VKmKquacu%2BZhDiQ1DSz7eIEPkHwWYw%3D",
-    "placeholder": "https://docserverpwaprodwus.blob.core.windows.net/26980e8a-c6c5-4017-aa36-5a4bf4f6c368-1/resource/Assets0Images0c940736a-1400-4426-9ca0-082919baf7a1.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T09%3A47%3A02Z&ske=2024-02-29T10%3A02%3A02Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T10%3A02%3A02Z&sr=b&sp=r&sig=dYRB7xsFjGgnjlK9PuXOIrZGNsehUHrmVkWlzBBjfO8%3D"
+    "Coffee MR customer icon": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images03c3815d9-b67b-4b58-ac96-39ad0fe950e7.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=g3hNf6%2B6g2IpvLVVjc9cJm5FCWqMJMadKdf0DexoFSk%3D",
+    "Coffee MR customerlist dismiss icon": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images08b798777-ec50-4612-8fff-64aa9c09c704.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=dswYWBqcNzQdsNenl%2F%2Byv9b6aGcD73Ba1YqMWuIJCqY%3D",
+    "Coffee MR customerlist select icon": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images034439065-9f94-42d4-ab76-5b7bd72040d1.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=cTXRRcOVVlGOGjoOWgiUs1VCp523la8mduyvUV7XjWc%3D",
+    "Coffee MR edit icon": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images088fa0b75-e761-41f1-b95e-5e73f5ac1f5d.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=iNYImeAXBd3D2syAfHyvOzeXFhndMf7RVQ%2BReZEwY4c%3D",
+    "Coffee MR general top back arrow": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images0bb887973-c9fa-4300-856a-2c60416d778c.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=nRsKmgl5bgerMPSimIe%2BorFkzWzsG%2BUlIQa1Ao34trQ%3D",
+    "Coffee MR info screen dismiss icon": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images0871d7ff9-d9c4-4a6e-aa91-9dc0024069f3.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=nBQVq7T9aXB0W0eBMM7idlto2acKXHkSgLGQq9wYo1s%3D",
+    "Coffee MR info screen info icon": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images0fbb1c9df-04d4-4ab1-be71-2072671a83d1.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=C%2FjUMQuSmXyEfq1btLTKw0riFTBu06tqlekBVwJgub4%3D",
+    "Coffee MR start screen info icon": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images05245a325-56ad-4090-9b7d-19fe0d256bab.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=HOY00H3PO9ygc6vPOmRtqJvd5JGysNX41f6E2eav8Hk%3D",
+    "Coffee MR succes icon": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images017a7b356-a3a5-4a54-852f-ce15075a724b.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=gcLJewTDkbpyheHMV6MFhjgSQkHQyVCjSMyaUyVXHYc%3D",
+    "Coffee MR top measurement dismiss icon": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images0c99256fe-a1f0-4ccb-b418-a0836f2eb2c7.svg?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=MVLSqDPbFsC6IuQ1dGdBUkJA%2BJtKHRzXgcgs9qv%2Br0k%3D",
+    "Coffee MR_Dimensions illustration_X2": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images088bc3f07-882f-440d-9394-9fdacafd1ab1.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=%2Blcd%2F8MgGGSaVxjmSdMHYQ3m%2Bd5psNhOZxjbF7coiZo%3D",
+    "Coffee MR_logotype and logo_x2": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images0a33a4fcb-fc20-4e37-862d-e83f7b9acab1.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=rSqR6Mx4M9JqKLsz6otVVwHYuUCLGYePJ124yfW%2FUKE%3D",
+    "Coffee-MR_spinner_light-aqua_X2": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images0667aaf2c-3750-45c9-9188-f6f47248f2cd.gif?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=7sXMMFy5a7z0HxMt1N6bb3bvnrwR38CkqcQOdbFDHlg%3D",
+    "placeholder": "https://docserverpwaprodwus.blob.core.windows.net/601b4308-c354-4271-af6e-0fe4c0d1623e-1/resource/Assets0Images0c940736a-1400-4426-9ca0-082919baf7a1.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-02-28T14%3A40%3A53Z&ske=2024-02-29T14%3A55%3A53Z&sks=b&skv=2022-11-02&sv=2022-11-02&spr=https&se=2024-02-29T14%3A55%3A53Z&sr=b&sp=r&sig=kSHnz5jBXAU9NPLs9YDd8y69z6G05s6fzkfa5M6XP0M%3D"
   },
   "OldLogoFileName": "14ijgi54.jpg",
   "OrderComponentMetadata": {
@@ -307,7 +307,6 @@
     "btnCustomerOverlay": {},
     "btnFilter": {},
     "btnFunctionLoadOrderSummary": {},
-    "btnItemGroup": {},
     "btnLearnMore": {},
     "btnMeasurementOverlay": {},
     "btnMRMeasure": {
@@ -596,6 +595,7 @@
     "lblInfoHeader": {},
     "lblInfoText": {},
     "lblItemDisplayName": {},
+    "lblItemGroup": {},
     "lblItemPrice": {},
     "lblItemSummaryDisplayName": {},
     "lblItemSummaryPrice": {},
@@ -885,7 +885,6 @@
     "btnCustomerOverlay": 29,
     "btnFilter": 60,
     "btnFunctionLoadOrderSummary": 134,
-    "btnItemGroup": 97,
     "btnLearnMore": 14,
     "btnMeasurementOverlay": 44,
     "btnMRMeasure": 30,
@@ -1044,6 +1043,7 @@
     "lblInfoHeader": 9,
     "lblInfoText": 11,
     "lblItemDisplayName": 106,
+    "lblItemGroup": 97,
     "lblItemPrice": 118,
     "lblItemSummaryDisplayName": 151,
     "lblItemSummaryPrice": 152,
@@ -1095,7 +1095,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.94845999999999997,
+    "AnalysisLoadTime": 1.0264173000000001,
     "ControlCount": {
       "3c030ee18d5d4acdb0591f7d2f3b76c5": 3,
       "67013d32c0a14aebbe9675e8fecfc8ea": 2,
@@ -1117,7 +1117,7 @@
       "timer": 1,
       "ViewInMR": 1
     },
-    "DeserializationLoadTime": 3.2231057999999999
+    "DeserializationLoadTime": 2.4614826000000001
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

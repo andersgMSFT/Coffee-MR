@@ -15,7 +15,7 @@
         OnSelect: =
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =123
+        TemplateSize: =140
         Width: =Parent.Width - (Self.X*2)
         X: =30
         Y: =conOrderSummaryHeader.Height - 15
@@ -41,7 +41,7 @@
                 VerticalAlign: =VerticalAlign.Top
                 Visible: =ThisItem.total
                 Width: =200 
-                Y: =Parent.Height/2 - Self.Height/2
+                Y: =Parent.Height - Self.Height
                 ZIndex: =1
 
             lblItemTotalSum As label:
@@ -59,14 +59,14 @@
                 Visible: =ThisItem.total
                 Width: =200
                 X: =Parent.Width - Self.Width - 20
-                Y: =Parent.Height/2 - Self.Height/2
+                Y: =Parent.Height - Self.Height
                 ZIndex: =2
 
         conHeader As groupContainer.manualLayoutContainer:
             Height: =85
             Visible: =ThisItem.header
             Width: =Parent.Width    
-            Y: =Parent.TemplateHeight - Self.Height
+            Y: =Parent.TemplateHeight - Self.Height -10
             ZIndex: =2
 
             recCurrentOrderDivider As rectangle:
@@ -492,7 +492,7 @@
             Font: =varTheme.font
             Height: =varTheme.PageHeader
             Size: =varTheme.FontSize4
-            Text: ="Order Summary"
+            Text: ="Order summary"
             Width: =Parent.Width
             ZIndex: =3
 

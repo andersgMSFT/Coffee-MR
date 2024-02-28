@@ -16,7 +16,7 @@
             Image: ='Coffee MR succes icon'
             LayoutMinHeight: =320
             LayoutMinWidth: =320
-            Width: =320
+            Width: =140
             ZIndex: =2
 
     timeSuccess As timer:

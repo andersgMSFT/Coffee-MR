@@ -1604,6 +1604,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.lblItemGroup.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.lblItemGroup.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Extras List Screen",
+                "type": "'Extras List Screen'.conTop.galItemGroups.conItemGroupcontent.lblItemGroup"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varMeasurement"
                 }
               ],
