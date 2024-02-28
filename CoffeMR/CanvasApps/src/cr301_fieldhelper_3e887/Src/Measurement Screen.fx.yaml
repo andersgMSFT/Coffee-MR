@@ -34,7 +34,7 @@
                 Font: =varTheme.font
                 Height: =Parent.Height
                 Size: =varTheme.FontSize4
-                Text: ="MR Measurement"
+                Text: ="MR measurement"
                 Width: =Parent.Width
                 ZIndex: =1
 
@@ -162,6 +162,7 @@
                 Color: =varTheme.TextLight
                 DisabledColor: =varTheme.TextLight
                 Fill: =varTheme.AppTeal
+                Font: =varTheme.font
                 FontWeight: =FontWeight.Normal
                 Height: =varTheme.ButtonHeight
                 HoverColor: =varTheme.TextLight

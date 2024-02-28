@@ -150,12 +150,11 @@
             Height: =100
             LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutGap: =30
+            LayoutGap: =50
             LayoutJustifyContent: =LayoutJustifyContent.Center
-            LayoutMinHeight: =112
+            LayoutMinHeight: =Parent.Height - 800
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
-            PaddingBottom: =20
             ZIndex: =7
 
             "ViewInMRControl As 'View in MR (preview)'.pcfdataset":

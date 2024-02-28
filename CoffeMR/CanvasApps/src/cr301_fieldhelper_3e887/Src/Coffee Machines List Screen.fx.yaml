@@ -152,7 +152,7 @@
                     Navigate('Coffee Machine screen', ScreenTransition.Cover);
                 ShowScrollbar: =false
                 TemplatePadding: =0
-                TemplateSize: =120
+                TemplateSize: =140
                 Width: =Parent.Width - (Self.X * 2)
                 X: =30
                 Y: =10
@@ -243,7 +243,7 @@
                                 =Text(ThisItem.unitPrice, varCurrencyFormat, varBcLocale)
                             VerticalAlign: =VerticalAlign.Top
                             Width: =300
-                            Y: =imgCoffeeMachineImage.Height - Self.Height
+                            Y: =lblCoffeeMachineDisplayName.Y + lblCoffeeMachineDisplayName.Height - 2
                             ZIndex: =1
 
                         lblCoffeeMachineDisplayName As label:
@@ -258,7 +258,7 @@
                             Text: =ThisItem.displayName
                             VerticalAlign: =VerticalAlign.Top
                             Width: =371
-                            Y: =0   
+                            Y: =10
                             ZIndex: =2
 
                     icnSelectCoffeeMachine As icon.ChevronRight:
