@@ -19,7 +19,7 @@ codeunit 70032 CoffeDemoDataGenerator
         // Add Coffee machines
         AddItem('CM001', 'Contoso SLIM 2018 San Diego', 'Contoso SLIM 2018 San Diego', 'finishedGoods', 699, CoffeeMachineImages.C0001_2018SandiagoSlim(), 40, 15, 23);
         AddItem('CM002', 'Contoso SLIM 2019 Las Vegas', 'Contoso SLIM 2019 Las Vegas', 'finishedGoods', 850, CoffeeMachineImages.C0002_2019LasVegaSlim(), 20, 20, 26);
-        AddItem('CM003', 'Contoso MINI 2018 San Diego', 'Contoso MINI 2018 San Diego', 'finishedGoods', 499, CoffeeMachineImages.C0003_2018SandiagoMini(), 30, 35, 20);
+        AddItem('CM003', 'Contoso MINI 2018 San Diego', 'Contoso MINI 2018 San Diego', 'finishedGoods', 499, CoffeeMachineImages.C0003_2018SandiagoMini(), 50, 30, 60);
         AddItem('CM004', 'Contoso MINI 2022 Orlando', 'Contoso MINI 2022 Orlando', 'finishedGoods', 499, CoffeeMachineImages.C0004_2022OrlandoMini(), 15, 20, 15);
         AddItem('CM005', 'Contoso MINI 2023 Orlando', 'Contoso MINI 2023 Orlando', 'finishedGoods', 699, CoffeeMachineImages.C0005_2023OrlandoMini(), 32, 20, 18);
         AddItem('CM006', 'Contoso PRO SLIM 2023 Orlando', 'Contoso PRO SLIM 2023 Orlando', 'finishedGoods', 699, CoffeeMachineImages.C0006_2023OrlandoProSlim(), 10, 9, 40);

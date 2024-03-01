@@ -1,14 +1,14 @@
 # [Preview] Business Central samples - Coffee MR
 Discover the future of industrial sales and planning with the Coffee MR Power App sample. This scenario leverages the mixed reality (MR) capabilities of Power Apps, integrated with Business Central's comprehensive data and business logic. 
 
-The scenario is designed around a company selling industrial coffee solutions and showcase how we can rethink the way space measurement and product visualization is approached when collecting information for Sales Orders.
+This scenario is designed around a company selling industrial coffee solutions and showcase how we can rethink the way space measurement and product visualization is approached when collecting information for Sales Orders.
 
-This sample contains a Business Central extension, and a Power Platform solution consisting of the Coffee MR Power App and a Power Automate flow. 
+The sample contains a Business Central extension, and a Power Platform solution consisting of the Coffee MR Power App and a Power Automate flow that handle some of the file upload. 
 
 The Business Central extension adds a CoffeeItems API that is used by the Power App and extends the BC Items data model to include a 3Dmodel and spatial information.
 The extension also contains a test page called “Coffee MR Sample” that lets you generate dummy sample data to make it easy to try out the sample. 
 
-To use the 3D rendering capability, you need to upload a 3D-model to one of the BC items you want to show in the app. There is a sample 3D object available [here](https://github.com/andersgMSFT/Coffee-MR/tree/main/Sample%20Data). The dimensions of the 3D model is taking from the Business Central Item values, so make sure to provide somewhat accurate measurements. The dimensions of the sample model is Depth: 60cm, Height: 50cm, Width: 20cm.
+To use the 3D rendering capability, you need to upload a 3D-model to one of the BC items you want to show in the app. There is a sample 3D object available [here](https://github.com/andersgMSFT/Coffee-MR/tree/main/Sample%20Data). The rendered dimensions of the 3D model is taken from the Business Central Item values, so make sure to provide somewhat accurate measurements. The dimensions of the sample model is Depth: 60cm, Height: 50cm, Width: 30cm, which matches demo item CM003.
 
 Notes: 
 -	The sample data generator has only been tested with US versions of Business Central. Adjustments may be necessary for other locales.
