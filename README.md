@@ -5,10 +5,12 @@ This scenario is designed around a company selling industrial coffee solutions a
 
 The sample contains a Business Central extension, and a Power Platform solution consisting of the Coffee MR Power App and a Power Automate flow that handle some of the file upload. 
 
-The Business Central extension adds a CoffeeItems API that is used by the Power App and extends the BC Items data model to include a 3Dmodel and spatial information.
+The Business Central extension adds a CoffeeItems API that is used by the Power App and extends the Item card page to include fields for 3Dmodel and spatial information.
 The extension also contains a test page called “Coffee MR Sample” that lets you generate dummy sample data to make it easy to try out the sample. 
 
 To use the 3D rendering capability, you need to upload a 3D-model to one of the BC items you want to show in the app. There is a sample 3D object available [here](https://github.com/andersgMSFT/Coffee-MR/tree/main/Sample%20Data). The rendered dimensions of the 3D model is taken from the Business Central Item values, so make sure to provide somewhat accurate measurements. The dimensions of the sample model is Depth: 60cm, Height: 50cm, Width: 30cm, which matches demo item CM003.
+
+You can find more 3D models in the ".glb" format available online or use ones from the 3D library in [Microsoft Paint 3D app](https://apps.microsoft.com/detail/9nblggh5fv99). You can also create your own 3D models there, save as .glb file and use those in the Coffee MR app!
 
 Notes: 
 -	The sample data generator has only been tested with US versions of Business Central. Adjustments may be necessary for other locales.
